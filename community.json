@@ -1,0 +1,22 @@
+{
+  "rvagg": {
+    "name": "Rod Vagg",
+    "email": "r@va.gg",
+    "npm": "rvagg",
+    "twitter": "rvagg",
+    "homepage": "http://r.va.gg"
+  },
+  "juliangruber": {
+    "name": "Julian Gruber",
+    "email": "julian@juliangruber.com",
+    "npm": "juliangruber",
+    "twitter": "juliangruber",
+    "homepage": "http://juliangruber.com"
+  },
+  "ralphtheninja": {
+    "name": "Lars-Magnus Skog",
+    "email": "ralphtheninja@riseup.net",
+    "npm": "ralphtheninja",
+    "twitter": "ralphtheninja"
+  }
+}
