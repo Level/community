@@ -6,7 +6,7 @@
 
 ## Usage
 
-Exposes a simple `json` object with community member meta data. The keys correspond to user names on github. Useful for mapping between github user space to npm user space etc.
+Exposes a simple `json` object with level maintainers meta data. The keys correspond to user names on github. Useful for mapping between github user space to npm user space etc.
 
 ```js
 var community = require('level-community')
