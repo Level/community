@@ -18,5 +18,12 @@
     "email": "ralphtheninja@riseup.net",
     "npm": "ralphtheninja",
     "twitter": "ralphtheninja"
+  },
+  "mcollina": {
+    "name": "Matteo Collina",
+    "email": "hello@matteocollina.com",
+    "npm": "matteo.collina",
+    "twitter": "matteocollina",
+    "homepage": "http://matteocollina.com"
   }
 }
