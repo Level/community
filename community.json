@@ -25,5 +25,12 @@
     "npm": "matteo.collina",
     "twitter": "matteocollina",
     "homepage": "http://matteocollina.com"
+  },
+  "kesla": {
+    "name": "David Björklund",
+    "email": "david.bjorklund@gmail.com",
+    "npm": "kesla",
+    "twitter": "david_bjorklund",
+    "homepage": "http://davidbjorklund.com"
   }
 }
