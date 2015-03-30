@@ -32,5 +32,12 @@
     "npm": "kesla",
     "twitter": "david_bjorklund",
     "homepage": "http://davidbjorklund.com"
+  },
+  "pgte": {
+    "name": "Pedro Teixeira",
+    "email": "i@pgte.me",
+    "npm": "pgte",
+    "twitter": "pgte",
+    "homepage": "http://pgte.me"
   }
 }
