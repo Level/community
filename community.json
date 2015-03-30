@@ -39,5 +39,12 @@
     "npm": "pgte",
     "twitter": "pgte",
     "homepage": "http://pgte.me"
+  },
+  "chesles": {
+    "name": "John Chesley",
+    "email": "john@chesl.es",
+    "npm": "chesles",
+    "twitter": "chesles",
+    "homepage": "http://blargh.chesl.es"
   }
 }
