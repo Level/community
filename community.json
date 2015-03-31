@@ -60,5 +60,15 @@
     "npm": "chesles",
     "twitter": "chesles",
     "homepage": "http://blargh.chesl.es"
+  },
+  {
+  "no9": {
+    "name": "Anton Whalley",
+    "email": "anton@venshare.com",
+    "npm": "no9",
+    "twitter": "dhigit9",
+    "homepage": "http://www.venshare.com"
   }
+ 
+
 }
