@@ -67,7 +67,12 @@
     "npm": "no9",
     "twitter": "dhigit9",
     "homepage": "http://www.venshare.com"
+  },
+  "dominictarr": {
+    "name": "Dominic Tarr",
+    "email": "dominic.tarr@gmail.com",
+    "npm": "dominictarr",
+    "twitter": "dominictarr",
+    "homepage": "http://dominictarr.com"
   }
- 
-
 }
