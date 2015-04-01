@@ -74,5 +74,12 @@
     "npm": "dominictarr",
     "twitter": "dominictarr",
     "homepage": "http://dominictarr.com"
+  },
+  "maxogden": {
+    "name": "Maxwell ogden",
+    "email": "max@maxogden.com",
+    "npm": "maxogden",
+    "twitter": "maxogden",
+    "homepage": "http://maxogden.com"
   }
 }
