@@ -1,7 +1,7 @@
 {
   "name": "level-community",
   "description": "Meta data on members of the LevelDB community",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/level/community.git"
@@ -13,9 +13,7 @@
     "npm"
   ],
   "main": "community.json",
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "license": "MIT"
 }
