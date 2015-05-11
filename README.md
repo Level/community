@@ -4,13 +4,13 @@
 
 **Gathers common information related to projects in the `Level` community**
 
-## License &amp; Copyright
+### License &amp; Copyright
 
 Copyright (c) 2012-2015 `Level` contributors.
 
 `Level` projects are licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included [`LICENSE.md`](https://github.com/level/community/blob/master/LICENSE.md) file for more details.
 
-## Contributing
+### Contributing
 
 `Level` projects are **OPEN Open Source Projects**. This means that:
 
@@ -18,7 +18,7 @@ Copyright (c) 2012-2015 `Level` contributors.
 
 See the [`CONTRIBUTING.md`](https://github.com/level/community/blob/master/CONTRIBUTING.md) file for more details.
 
-## Contributors
+### Contributors
 
 `Level` projects are only possible due to the excellent work of the following contributors:
 
@@ -38,6 +38,8 @@ See the [`CONTRIBUTING.md`](https://github.com/level/community/blob/master/CONTR
 <tr><th align="left">James Halliday</th><td><a href="https://github.com/substack">GitHub/substack</a></td><td><a href="https://twitter.com/substack">Twitter/@substack</a></td></tr>
 <tr><th align="left">Jarrett Cruger</th><td><a href="https://github.com/jcrugzz">GitHub/jcrugzz</a></td><td><a href="https://twitter.com/jcrugzz">Twitter/@jcrugzz</a></td></tr>
 </tbody></table>
+
+### Api
 
 Contributors can be accessed from code by:
 
