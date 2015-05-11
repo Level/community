@@ -4,6 +4,8 @@
 
 **Gathers common information related to projects in the `Level` community**
 
+When creating a new project. Either link to this repository or include it as a dependency in `package.json`.
+
 ### License &amp; Copyright
 
 Copyright (c) 2012-2015 `Level` contributors.
