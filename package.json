@@ -12,7 +12,7 @@
     "community",
     "npm"
   ],
-  "main": "community.json",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
   "license": "MIT"
