@@ -81,5 +81,12 @@
     "npm": "maxogden",
     "twitter": "maxogden",
     "homepage": "http://maxogden.com"
+  },
+  "mafintosh": {
+    "name": "Mathias Buus",
+    "email": "mathiasbuus@gmail.com",
+    "npm": "mafintosh",
+    "twitter": "mafintosh",
+    "homepage": "http://mafintosh.com"
   }
 }
