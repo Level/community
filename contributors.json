@@ -88,5 +88,12 @@
     "npm": "mafintosh",
     "twitter": "mafintosh",
     "homepage": "http://mafintosh.com"
+  },
+  "obastemur": {
+    "name": "Oguz Bastemur",
+    "email": "obastemur@gmail.com",
+    "npm": "obastemur",
+    "twitter": "obastemur",
+    "homepage": "http://obastemur.blogspot.com"
   }
 }
