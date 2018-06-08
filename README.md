@@ -41,6 +41,7 @@ See the [`CONTRIBUTING.md`](https://github.com/level/community/blob/master/CONTR
 <tr><th align="left">Jarrett Cruger</th><td><a href="https://github.com/jcrugzz">GitHub/jcrugzz</a></td><td><a href="https://twitter.com/jcrugzz">Twitter/@jcrugzz</a></td></tr>
 <tr><th align="left">Mathias Buus</th><td><a href="https://github.com/mafintosh">GitHub/mafintosh</a></td><td><a href="https://twitter.com/mafintosh">Twitter/@mafintosh</a></td></tr>
 <tr><th align="left">Oguz Bastemur</th><td><a href="https://github.com/obastemur">GitHub/obastemur</a></td><td><a href="https://twitter.com/obastemur">Twitter/@obastemur</a></td></tr>
+<tr><th align="left">Huan LI</th><td><a href="https://github.com/zixia">GitHub/zixia</a></td><td><a href="https://twitter.com/zixia">Twitter/@zixia</a></td></tr>
 </tbody></table>
 
 ### Api
