@@ -2,6 +2,7 @@
   {
     "name": "Rod Vagg",
     "email": "r@va.gg",
+    "github": "rvagg",
     "npm": "rvagg",
     "twitter": "rvagg",
     "url": "http://r.va.gg"
@@ -9,6 +10,7 @@
   {
     "name": "Jarrett Cruger",
     "email": "jcrugzz@gmail.com",
+    "github": "jcrugzz",
     "npm": "jcrugzz",
     "twitter": "jcrugzz",
     "url": "http://jcruger.com"
@@ -16,6 +18,7 @@
   {
     "name": "Julian Gruber",
     "email": "julian@juliangruber.com",
+    "github": "juliangruber",
     "npm": "juliangruber",
     "twitter": "juliangruber",
     "url": "http://juliangruber.com"
@@ -23,11 +26,13 @@
   {
     "name": "Lars-Magnus Skog",
     "email": "ralphtheninja@riseup.net",
+    "github": "ralphtheninja",
     "npm": "ralphtheninja"
   },
   {
     "name": "Matteo Collina",
     "email": "hello@matteocollina.com",
+    "github": "mcollina",
     "npm": "matteo.collina",
     "twitter": "matteocollina",
     "url": "http://matteocollina.com"
@@ -35,6 +40,7 @@
   {
     "name": "Paolo Fragomeni",
     "email": "paolo@async.ly",
+    "github": "hxoht",
     "npm": "hij1nx",
     "twitter": "hij1nx",
     "url": "http://async.ly"
@@ -42,6 +48,7 @@
   {
     "name": "David Björklund",
     "email": "david.bjorklund@gmail.com",
+    "github": "kesla",
     "npm": "kesla",
     "twitter": "david_bjorklund",
     "url": "http://davidbjorklund.com"
@@ -49,6 +56,7 @@
   {
     "name": "Pedro Teixeira",
     "email": "i@pgte.me",
+    "github": "pgte",
     "npm": "pgte",
     "twitter": "pgte",
     "url": "http://pgte.me"
@@ -56,6 +64,7 @@
   {
     "name": "John Chesley",
     "email": "john@chesl.es",
+    "github": "chesles",
     "npm": "chesles",
     "twitter": "chesles",
     "url": "http://blargh.chesl.es"
@@ -63,6 +72,7 @@
   {
     "name": "Anton Whalley",
     "email": "anton@venshare.com",
+    "github": "no9",
     "npm": "no9",
     "twitter": "dhigit9",
     "url": "http://www.venshare.com"
@@ -70,6 +80,7 @@
   {
     "name": "Dominic Tarr",
     "email": "dominic.tarr@gmail.com",
+    "github": "dominictarr",
     "npm": "dominictarr",
     "twitter": "dominictarr",
     "url": "http://dominictarr.com"
@@ -77,6 +88,7 @@
   {
     "name": "Maxwell ogden",
     "email": "max@maxogden.com",
+    "github": "maxogden",
     "npm": "maxogden",
     "twitter": "maxogden",
     "url": "http://maxogden.com"
@@ -84,6 +96,7 @@
   {
     "name": "Mathias Buus",
     "email": "mathiasbuus@gmail.com",
+    "github": "mafintosh",
     "npm": "mafintosh",
     "twitter": "mafintosh",
     "url": "http://mafintosh.com"
@@ -91,6 +104,7 @@
   {
     "name": "Oguz Bastemur",
     "email": "obastemur@gmail.com",
+    "github": "obastemur",
     "npm": "obastemur",
     "twitter": "obastemur",
     "url": "http://obastemur.blogspot.com"
@@ -98,6 +112,7 @@
   {
     "name": "Huan LI",
     "email": "zixia@zixia.net",
+    "github": "zixia",
     "npm": "zixia",
     "twitter": "zixia",
     "url": "https://www.zixia.net"
