@@ -133,5 +133,13 @@
     "npm": "nolanlawson",
     "mastodon": "@nolan@toot.cafe",
     "url": "https://nolanlawson.com"
+  },
+  {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com",
+    "github": "shama",
+    "npm": "shama",
+    "twitter": "shamakry",
+    "url": "http://dontkry.com"
   }
 ]
