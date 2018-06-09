@@ -1,105 +1,105 @@
-{
-  "rvagg": {
+[
+  {
     "name": "Rod Vagg",
     "email": "r@va.gg",
     "npm": "rvagg",
     "twitter": "rvagg",
     "homepage": "http://r.va.gg"
   },
-   "jcrugzz": {
+  {
     "name": "Jarrett Cruger",
     "email": "jcrugzz@gmail.com",
     "npm": "jcrugzz",
     "twitter": "jcrugzz",
     "homepage": "http://jcruger.com"
   },
-  "juliangruber": {
+  {
     "name": "Julian Gruber",
     "email": "julian@juliangruber.com",
     "npm": "juliangruber",
     "twitter": "juliangruber",
     "homepage": "http://juliangruber.com"
   },
-  "ralphtheninja": {
+  {
     "name": "Lars-Magnus Skog",
     "email": "ralphtheninja@riseup.net",
     "npm": "ralphtheninja"
   },
-  "mcollina": {
+  {
     "name": "Matteo Collina",
     "email": "hello@matteocollina.com",
     "npm": "matteo.collina",
     "twitter": "matteocollina",
     "homepage": "http://matteocollina.com"
   },
-  "hij1nx": {
+  {
     "name": "Paolo Fragomeni",
     "email": "paolo@async.ly",
     "npm": "hij1nx",
     "twitter": "hij1nx",
     "homepage": "http://async.ly"
   },
-  "kesla": {
+  {
     "name": "David Björklund",
     "email": "david.bjorklund@gmail.com",
     "npm": "kesla",
     "twitter": "david_bjorklund",
     "homepage": "http://davidbjorklund.com"
   },
-  "pgte": {
+  {
     "name": "Pedro Teixeira",
     "email": "i@pgte.me",
     "npm": "pgte",
     "twitter": "pgte",
     "homepage": "http://pgte.me"
   },
-  "chesles": {
+  {
     "name": "John Chesley",
     "email": "john@chesl.es",
     "npm": "chesles",
     "twitter": "chesles",
     "homepage": "http://blargh.chesl.es"
   },
-  "no9": {
+  {
     "name": "Anton Whalley",
     "email": "anton@venshare.com",
     "npm": "no9",
     "twitter": "dhigit9",
     "homepage": "http://www.venshare.com"
   },
-  "dominictarr": {
+  {
     "name": "Dominic Tarr",
     "email": "dominic.tarr@gmail.com",
     "npm": "dominictarr",
     "twitter": "dominictarr",
     "homepage": "http://dominictarr.com"
   },
-  "maxogden": {
+  {
     "name": "Maxwell ogden",
     "email": "max@maxogden.com",
     "npm": "maxogden",
     "twitter": "maxogden",
     "homepage": "http://maxogden.com"
   },
-  "mafintosh": {
+  {
     "name": "Mathias Buus",
     "email": "mathiasbuus@gmail.com",
     "npm": "mafintosh",
     "twitter": "mafintosh",
     "homepage": "http://mafintosh.com"
   },
-  "obastemur": {
+  {
     "name": "Oguz Bastemur",
     "email": "obastemur@gmail.com",
     "npm": "obastemur",
     "twitter": "obastemur",
     "homepage": "http://obastemur.blogspot.com"
   },
-  "zixia": {
+  {
     "name": "Huan LI",
     "email": "zixia@zixia.net",
     "npm": "zixia",
     "twitter": "zixia",
     "homepage": "https://www.zixia.net"
   }
-}
+]
