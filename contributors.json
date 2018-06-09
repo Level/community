@@ -117,5 +117,13 @@
     "npm": "zixia",
     "twitter": "zixia",
     "url": "https://www.zixia.net"
+  },
+  {
+    "name": "Vincent Weevers",
+    "email": "mail@vincentweevers.nl",
+    "github": "vweevers",
+    "npm": "vweevers",
+    "twitter": "vweevers",
+    "url": "https://vincentweevers.nl"
   }
 ]
