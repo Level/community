@@ -125,5 +125,13 @@
     "npm": "vweevers",
     "twitter": "vweevers",
     "url": "https://vincentweevers.nl"
+  },
+  {
+    "name": "Nolan Lawson",
+    "email": "nolan@nolanlawson.com",
+    "github": "nolanlawson",
+    "npm": "nolanlawson",
+    "mastodon": "@nolan@toot.cafe",
+    "url": "https://nolanlawson.com"
   }
 ]
