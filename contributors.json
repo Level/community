@@ -159,5 +159,13 @@
     "name": "Ryan Ramage",
     "email": "ryan.ramage@gmail.com",
     "github": "ryanramage"
+  },
+  {
+    "name": "Yoshua Wuyts",
+    "email": "yoshuawuyts@gmail.com",
+    "github": "yoshuawuyts",
+    "npm": "yoshuawuyts",
+    "twitter": "yoshuawuyts",
+    "url": "https://yoshuawuyts.com"
   }
 ]
