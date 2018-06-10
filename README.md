@@ -6,7 +6,7 @@
 
 When creating a new project. Either link to this repository or include it as a dependency in `package.json`.
 
-### API
+## API
 
 Contributors can be accessed from code by:
 
@@ -15,7 +15,7 @@ var contributors = require('level-community').contributors
 console.log(JSON.stringify(contributors, null, 2))
 ```
 
-### Contributing
+## Contributing
 
 `Level` projects are **OPEN Open Source Projects**. This means that:
 
@@ -23,7 +23,7 @@ console.log(JSON.stringify(contributors, null, 2))
 
 See the [`CONTRIBUTING.md`](https://github.com/level/community/blob/master/CONTRIBUTING.md) file for more details.
 
-### License
+## License
 
 Copyright &copy; 2012-present `Level` contributors.
 
