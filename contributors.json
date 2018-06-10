@@ -167,5 +167,13 @@
     "npm": "yoshuawuyts",
     "twitter": "yoshuawuyts",
     "url": "https://yoshuawuyts.com"
+  },
+  {
+    "name": "James Kyburz",
+    "email": "james.kyburz@gmail.com",
+    "github": "jameskyburz",
+    "npm": "jameskyburz",
+    "twitter": "jameskyburz",
+    "url": "http://www.dotnetmentor.se/"
   }
 ]
