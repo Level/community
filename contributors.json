@@ -146,5 +146,13 @@
     "name": "Josh",
     "email": "qs44@cornell.edu",
     "github": "qs44"
+  },
+  {
+    "name": "James Halliday",
+    "email": "substack@gmail.com",
+    "github": "substack",
+    "npm": "substack",
+    "twitter": "substack",
+    "url": "https://substack.neocities.org/"
   }
 ]
