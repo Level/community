@@ -154,5 +154,10 @@
     "npm": "substack",
     "twitter": "substack",
     "url": "https://substack.neocities.org/"
+  },
+  {
+    "name": "Ryan Ramage",
+    "email": "ryan.ramage@gmail.com",
+    "github": "ryanramage"
   }
 ]
