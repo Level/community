@@ -43,7 +43,7 @@
     "email": "paolo@async.ly",
     "github": "hxoht",
     "npm": "hij1nx",
-    "twitter": "hij1nx",
+    "twitter": "hxoht",
     "url": "http://async.ly"
   },
   {
@@ -146,5 +146,53 @@
     "name": "Josh",
     "email": "qs44@cornell.edu",
     "github": "qs44"
+  },
+  {
+    "name": "James Halliday",
+    "email": "substack@gmail.com",
+    "github": "substack",
+    "npm": "substack",
+    "twitter": "substack",
+    "url": "https://substack.neocities.org/"
+  },
+  {
+    "name": "Ryan Ramage",
+    "email": "ryan.ramage@gmail.com",
+    "github": "ryanramage"
+  },
+  {
+    "name": "Yoshua Wuyts",
+    "email": "yoshuawuyts@gmail.com",
+    "github": "yoshuawuyts",
+    "npm": "yoshuawuyts",
+    "twitter": "yoshuawuyts",
+    "url": "https://yoshuawuyts.com"
+  },
+  {
+    "name": "James Kyburz",
+    "email": "james.kyburz@gmail.com",
+    "github": "jameskyburz",
+    "npm": "jameskyburz",
+    "twitter": "jameskyburz",
+    "url": "http://www.dotnetmentor.se/"
+  },
+  {
+    "name": "Calvin Metcalf",
+    "email": "cmetcalf@appgeo.com",
+    "github": "calvinmetcalf",
+    "url": "http://calvinmetcalf.com/"
+  },
+  {
+    "name": "Nicholas Westlake",
+    "email": "nicholasredlin@gmail.com",
+    "github": "nrw",
+    "npm": "nrw"
+  },
+  {
+    "name": "Bryce Baril",
+    "email": "bryce@ravenwall.com",
+    "github": "brycebaril",
+    "twitter": "brycebaril",
+    "url": "http://nothingissacred.org"
   }
 ]
