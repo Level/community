@@ -1,105 +1,150 @@
-{
-  "rvagg": {
+[
+  {
     "name": "Rod Vagg",
     "email": "r@va.gg",
+    "github": "rvagg",
     "npm": "rvagg",
     "twitter": "rvagg",
-    "homepage": "http://r.va.gg"
+    "url": "http://r.va.gg"
   },
-   "jcrugzz": {
+  {
     "name": "Jarrett Cruger",
     "email": "jcrugzz@gmail.com",
+    "github": "jcrugzz",
     "npm": "jcrugzz",
     "twitter": "jcrugzz",
-    "homepage": "http://jcruger.com"
+    "url": "http://jcruger.com"
   },
-  "juliangruber": {
+  {
     "name": "Julian Gruber",
     "email": "julian@juliangruber.com",
+    "github": "juliangruber",
     "npm": "juliangruber",
     "twitter": "juliangruber",
-    "homepage": "http://juliangruber.com"
+    "url": "http://juliangruber.com"
   },
-  "ralphtheninja": {
+  {
     "name": "Lars-Magnus Skog",
     "email": "ralphtheninja@riseup.net",
+    "github": "ralphtheninja",
+    "mastodon": "@ralph@social.weho.st",
     "npm": "ralphtheninja"
   },
-  "mcollina": {
+  {
     "name": "Matteo Collina",
     "email": "hello@matteocollina.com",
+    "github": "mcollina",
     "npm": "matteo.collina",
     "twitter": "matteocollina",
-    "homepage": "http://matteocollina.com"
+    "url": "http://matteocollina.com"
   },
-  "hij1nx": {
+  {
     "name": "Paolo Fragomeni",
     "email": "paolo@async.ly",
+    "github": "hxoht",
     "npm": "hij1nx",
     "twitter": "hij1nx",
-    "homepage": "http://async.ly"
+    "url": "http://async.ly"
   },
-  "kesla": {
+  {
     "name": "David Björklund",
     "email": "david.bjorklund@gmail.com",
+    "github": "kesla",
     "npm": "kesla",
     "twitter": "david_bjorklund",
-    "homepage": "http://davidbjorklund.com"
+    "url": "http://davidbjorklund.com"
   },
-  "pgte": {
+  {
     "name": "Pedro Teixeira",
     "email": "i@pgte.me",
+    "github": "pgte",
     "npm": "pgte",
     "twitter": "pgte",
-    "homepage": "http://pgte.me"
+    "url": "http://pgte.me"
   },
-  "chesles": {
+  {
     "name": "John Chesley",
     "email": "john@chesl.es",
+    "github": "chesles",
     "npm": "chesles",
     "twitter": "chesles",
-    "homepage": "http://blargh.chesl.es"
+    "url": "http://blargh.chesl.es"
   },
-  "no9": {
+  {
     "name": "Anton Whalley",
     "email": "anton@venshare.com",
+    "github": "no9",
     "npm": "no9",
     "twitter": "dhigit9",
-    "homepage": "http://www.venshare.com"
+    "url": "http://www.venshare.com"
   },
-  "dominictarr": {
+  {
     "name": "Dominic Tarr",
     "email": "dominic.tarr@gmail.com",
+    "github": "dominictarr",
     "npm": "dominictarr",
     "twitter": "dominictarr",
-    "homepage": "http://dominictarr.com"
+    "url": "http://dominictarr.com"
   },
-  "maxogden": {
-    "name": "Maxwell ogden",
+  {
+    "name": "Max Ogden",
     "email": "max@maxogden.com",
+    "github": "maxogden",
     "npm": "maxogden",
     "twitter": "maxogden",
-    "homepage": "http://maxogden.com"
+    "url": "http://maxogden.com"
   },
-  "mafintosh": {
+  {
     "name": "Mathias Buus",
     "email": "mathiasbuus@gmail.com",
+    "github": "mafintosh",
     "npm": "mafintosh",
     "twitter": "mafintosh",
-    "homepage": "http://mafintosh.com"
+    "url": "http://mafintosh.com"
   },
-  "obastemur": {
+  {
     "name": "Oguz Bastemur",
     "email": "obastemur@gmail.com",
+    "github": "obastemur",
     "npm": "obastemur",
     "twitter": "obastemur",
-    "homepage": "http://obastemur.blogspot.com"
+    "url": "http://obastemur.blogspot.com"
   },
-  "zixia": {
+  {
     "name": "Huan LI",
     "email": "zixia@zixia.net",
+    "github": "zixia",
     "npm": "zixia",
     "twitter": "zixia",
-    "homepage": "https://www.zixia.net"
+    "url": "https://www.zixia.net"
+  },
+  {
+    "name": "Vincent Weevers",
+    "email": "mail@vincentweevers.nl",
+    "github": "vweevers",
+    "npm": "vweevers",
+    "twitter": "vweevers",
+    "url": "https://vincentweevers.nl"
+  },
+  {
+    "name": "Nolan Lawson",
+    "email": "nolan@nolanlawson.com",
+    "github": "nolanlawson",
+    "npm": "nolanlawson",
+    "mastodon": "@nolan@toot.cafe",
+    "url": "https://nolanlawson.com"
+  },
+  {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com",
+    "github": "shama",
+    "npm": "shama",
+    "twitter": "shamakry",
+    "url": "http://dontkry.com"
+  },
+  {
+    "name": "Josh",
+    "email": "qs44@cornell.edu",
+    "github": "qs44"
   }
-}
+]
