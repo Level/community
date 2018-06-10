@@ -1,82 +1,141 @@
 [
   {
-    "name": "Rod Vagg",
-    "email": "r@va.gg",
-    "github": "rvagg",
-    "npm": "rvagg",
-    "twitter": "rvagg",
-    "url": "http://r.va.gg"
+    "name": "Aaron Bieber",
+    "github": "qbit",
+    "url": "https://deftly.net"
   },
   {
-    "name": "Jarrett Cruger",
-    "email": "jcrugzz@gmail.com",
-    "github": "jcrugzz",
-    "npm": "jcrugzz",
-    "twitter": "jcrugzz",
-    "url": "http://jcruger.com"
+    "name": "Adam Bliss",
+    "github": "abliss",
+    "url": "http://rapidraven.com"
   },
   {
-    "name": "Julian Gruber",
-    "email": "julian@juliangruber.com",
-    "github": "juliangruber",
-    "npm": "juliangruber",
-    "twitter": "juliangruber",
-    "url": "http://juliangruber.com"
+    "name": "Aditya Purwa",
+    "github": "adityapurwa"
   },
   {
-    "name": "Lars-Magnus Skog",
-    "email": "ralphtheninja@riseup.net",
-    "github": "ralphtheninja",
-    "mastodon": "@ralph@social.weho.st",
-    "npm": "ralphtheninja"
+    "name": "Alan Gutierrez",
+    "github": "bigeasy",
+    "twitter": "bigeasy"
   },
   {
-    "name": "Matteo Collina",
-    "email": "hello@matteocollina.com",
-    "github": "mcollina",
-    "npm": "matteo.collina",
-    "twitter": "matteocollina",
-    "url": "http://matteocollina.com"
+    "name": "Alejandro Oviedo",
+    "github": "a0viedo",
+    "url": "https://elendur.com"
   },
   {
-    "name": "Paolo Fragomeni",
-    "email": "paolo@async.ly",
-    "github": "hxoht",
-    "npm": "hij1nx",
-    "twitter": "hij1nx",
-    "url": "http://async.ly"
+    "name": "Alex Gentile",
+    "github": "agentilela"
   },
   {
-    "name": "David Björklund",
-    "email": "david.bjorklund@gmail.com",
-    "github": "kesla",
-    "npm": "kesla",
-    "twitter": "david_bjorklund",
-    "url": "http://davidbjorklund.com"
+    "name": "Alexandru Vlăduţu",
+    "github": "alessioalex"
   },
   {
-    "name": "Pedro Teixeira",
-    "email": "i@pgte.me",
-    "github": "pgte",
-    "npm": "pgte",
-    "twitter": "pgte",
-    "url": "http://pgte.me"
+    "name": "Amadeus J",
+    "github": "dey-dey"
   },
   {
-    "name": "John Chesley",
-    "email": "john@chesl.es",
-    "github": "chesles",
-    "npm": "chesles",
-    "twitter": "chesles",
-    "url": "http://blargh.chesl.es"
+    "name": "Amine Mouafik",
+    "github": "kytwb",
+    "url": "https://mouafik.fr/"
+  },
+  {
+    "name": "Andrew Kelley",
+    "github": "andrewrk"
+  },
+  {
+    "name": "André Staltz",
+    "github": "staltz",
+    "url": "http://staltz.com"
   },
   {
     "name": "Anton Whalley",
     "email": "anton@venshare.com",
     "github": "no9",
     "npm": "no9",
-    "twitter": "dhigit9",
-    "url": "http://www.venshare.com"
+    "twitter": "dhigit9"
+  },
+  {
+    "name": "Arnout Engelen",
+    "github": "raboof",
+    "url": "https://arnout.engelen.eu"
+  },
+  {
+    "name": "Ben West",
+    "github": "bewest"
+  },
+  {
+    "name": "Braydon Fuller",
+    "github": "braydonf",
+    "url": "https://braydon.com"
+  },
+  {
+    "name": "Brian Woodward",
+    "github": "doowb",
+    "twitter": "doowb"
+  },
+  {
+    "name": "Bryce Baril",
+    "email": "bryce@ravenwall.com",
+    "github": "brycebaril",
+    "twitter": "brycebaril",
+    "url": "http://nothingissacred.org"
+  },
+  {
+    "name": "Calvin Metcalf",
+    "email": "cmetcalf@appgeo.com",
+    "github": "calvinmetcalf",
+    "url": "http://calvinmetcalf.com/"
+  },
+  {
+    "name": "Chiguireitor",
+    "github": "chiguireitor"
+  },
+  {
+    "name": "Christopher Jeffrey (JJ)",
+    "github": "chjj",
+    "twitter": "_chjj"
+  },
+  {
+    "name": "Colin Ihrig",
+    "github": "cjihrig"
+  },
+  {
+    "name": "Daniel Aristizabal",
+    "github": "cronopio",
+    "url": "http://cronop.io"
+  },
+  {
+    "name": "Daniel Cousens",
+    "github": "dcousens",
+    "url": "https://dcousens.com"
+  },
+  {
+    "name": "Daniel Ravina",
+    "github": "danielravina",
+    "url": "https://danielravina.github.io"
+  },
+  {
+    "name": "David Björklund",
+    "email": "david.bjorklund@gmail.com",
+    "github": "kesla",
+    "npm": "kesla",
+    "twitter": "david_bjorklund"
+  },
+  {
+    "name": "David Dias",
+    "github": "diasdavid",
+    "url": "http://daviddias.me"
+  },
+  {
+    "name": "Dean Landolt",
+    "github": "deanlandolt"
+  },
+  {
+    "name": "Deian Stefan",
+    "github": "deian",
+    "url": "http://deian.org"
   },
   {
     "name": "Dominic Tarr",
@@ -87,28 +146,36 @@
     "url": "http://dominictarr.com"
   },
   {
-    "name": "Max Ogden",
-    "email": "max@maxogden.com",
-    "github": "maxogden",
-    "npm": "maxogden",
-    "twitter": "maxogden",
-    "url": "http://maxogden.com"
+    "name": "Eduardo Sorribas",
+    "github": "sorribas"
   },
   {
-    "name": "Mathias Buus",
-    "email": "mathiasbuus@gmail.com",
-    "github": "mafintosh",
-    "npm": "mafintosh",
-    "twitter": "mafintosh",
-    "url": "http://mafintosh.com"
+    "name": "Evan Schwartz",
+    "github": "emschwartz"
   },
   {
-    "name": "Oguz Bastemur",
-    "email": "obastemur@gmail.com",
-    "github": "obastemur",
-    "npm": "obastemur",
-    "twitter": "obastemur",
-    "url": "http://obastemur.blogspot.com"
+    "name": "Gawen Arab",
+    "github": "Gawen",
+    "url": "https://gawen.me/"
+  },
+  {
+    "name": "Geoff Greer",
+    "github": "ggreer",
+    "url": "https://geoff.greer.fm/"
+  },
+  {
+    "name": "Gordon Hall",
+    "github": "bookchin",
+    "url": "http://bookch.in/"
+  },
+  {
+    "name": "Hans Ott",
+    "github": "hansott",
+    "url": "https://hansott.github.io"
+  },
+  {
+    "name": "Haokang Den",
+    "github": "hden"
   },
   {
     "name": "Huan LI",
@@ -119,20 +186,135 @@
     "url": "https://www.zixia.net"
   },
   {
-    "name": "Vincent Weevers",
-    "email": "mail@vincentweevers.nl",
-    "github": "vweevers",
-    "npm": "vweevers",
-    "twitter": "vweevers",
-    "url": "https://vincentweevers.nl"
+    "name": "Istvan",
+    "github": "l1x"
   },
   {
-    "name": "Nolan Lawson",
-    "email": "nolan@nolanlawson.com",
-    "github": "nolanlawson",
-    "npm": "nolanlawson",
-    "mastodon": "@nolan@toot.cafe",
-    "url": "https://nolanlawson.com"
+    "name": "Ivan Miskovic",
+    "github": "ivantm"
+  },
+  {
+    "name": "j chesley",
+    "github": "chesles"
+  },
+  {
+    "name": "Jake Verbaten",
+    "github": "Raynos",
+    "twitter": "raynos"
+  },
+  {
+    "name": "James Butler",
+    "github": "sandfox"
+  },
+  {
+    "name": "James Grayling",
+    "github": "jamesgrayling"
+  },
+  {
+    "name": "James Halliday",
+    "email": "substack@gmail.com",
+    "github": "substack",
+    "npm": "substack",
+    "twitter": "substack",
+    "url": "https://substack.neocities.org/"
+  },
+  {
+    "name": "James Kyburz",
+    "email": "james.kyburz@gmail.com",
+    "github": "jameskyburz",
+    "npm": "jameskyburz",
+    "twitter": "jameskyburz",
+    "url": "http://www.dotnetmentor.se/"
+  },
+  {
+    "name": "Jarrett Cruger",
+    "email": "jcrugzz@gmail.com",
+    "github": "jcrugzz",
+    "npm": "jcrugzz",
+    "twitter": "jcrugzz",
+    "url": "http://jcruger.com"
+  },
+  {
+    "name": "Jeremy Taylor",
+    "github": "refset",
+    "url": "http://jdt.me"
+  },
+  {
+    "name": "jess",
+    "github": "monkeywithacupcake",
+    "url": "jessachandler.com"
+  },
+  {
+    "name": "Jim Liu",
+    "github": "JimLiu"
+  },
+  {
+    "name": "John Chesley",
+    "email": "john@chesl.es",
+    "github": "chesles",
+    "npm": "chesles",
+    "twitter": "chesles"
+  },
+  {
+    "name": "Jose-Luis Rivas",
+    "github": "ghostbar",
+    "url": "https://ghostbar.co/"
+  },
+  {
+    "name": "Joseph Dykstra",
+    "github": "ArtskydJ",
+    "url": "http://www.josephdykstra.com"
+  },
+  {
+    "name": "Josh",
+    "email": "qs44@cornell.edu",
+    "github": "qs44"
+  },
+  {
+    "name": "Josh Duff",
+    "github": "TehShrike",
+    "url": "https://tehshrike.github.io/"
+  },
+  {
+    "name": "José F. Romaniello",
+    "github": "jfromaniello",
+    "twitter": "jfroma"
+  },
+  {
+    "name": "Joyee Cheung",
+    "github": "joyeecheung",
+    "twitter": "joyeecheung"
+  },
+  {
+    "name": "Julian Gruber",
+    "email": "julian@juliangruber.com",
+    "github": "juliangruber",
+    "npm": "juliangruber",
+    "twitter": "juliangruber",
+    "url": "http://juliangruber.com"
+  },
+  {
+    "name": "Karolina Szczur",
+    "github": "thefoxis",
+    "url": "http://thefox.is"
+  },
+  {
+    "name": "kenny",
+    "github": "heavyk"
+  },
+  {
+    "name": "Kirill Fomichev",
+    "github": "fanatid"
+  },
+  {
+    "name": "kumavis",
+    "github": "kumavis",
+    "url": "http://aaron.kumavis.me"
+  },
+  {
+    "name": "Kyle Mitchell",
+    "github": "kemitchell",
+    "url": "https://kemitchell.com"
   },
   {
     "name": "Kyle Robinson Young",
@@ -143,8 +325,249 @@
     "url": "http://dontkry.com"
   },
   {
-    "name": "Josh",
-    "email": "qs44@cornell.edu",
-    "github": "qs44"
+    "name": "Lars-Magnus Skog",
+    "email": "ralphtheninja@riseup.net",
+    "github": "ralphtheninja",
+    "mastodon": "@ralph@social.weho.st",
+    "npm": "ralphtheninja"
+  },
+  {
+    "name": "Luandro",
+    "github": "luandro",
+    "url": "http://luandro.com"
+  },
+  {
+    "name": "Manuel Ernst",
+    "github": "seriousManual"
+  },
+  {
+    "name": "Marco Oliveira",
+    "github": "marcooliveira",
+    "twitter": "sonicspot"
+  },
+  {
+    "name": "Marcos Vinicius Bérgamo",
+    "github": "thebergamo",
+    "url": "https://medium.com/@thedon"
+  },
+  {
+    "name": "Mark Cavage",
+    "github": "mcavage"
+  },
+  {
+    "name": "Mark Wolfe",
+    "github": "wolfeidau",
+    "url": "http://www.wolfe.id.au"
+  },
+  {
+    "name": "Mathias Buus",
+    "email": "mathiasbuus@gmail.com",
+    "github": "mafintosh",
+    "npm": "mafintosh",
+    "twitter": "mafintosh",
+    "url": "http://mafintosh.com"
+  },
+  {
+    "name": "Matt Walters",
+    "github": "mateodelnorte",
+    "url": "http://www.iammattwalters.com/"
+  },
+  {
+    "name": "Matteo Collina",
+    "email": "hello@matteocollina.com",
+    "github": "mcollina",
+    "npm": "matteo.collina",
+    "twitter": "matteocollina"
+  },
+  {
+    "name": "Matthew Wright",
+    "github": "farskipper",
+    "url": "https://smallhelm.com"
+  },
+  {
+    "name": "Max Ogden",
+    "email": "max@maxogden.com",
+    "github": "maxogden",
+    "npm": "maxogden",
+    "twitter": "maxogden",
+    "url": "http://maxogden.com"
+  },
+  {
+    "name": "Meirion Hughes",
+    "github": "MeirionHughes"
+  },
+  {
+    "name": "Michael Hart",
+    "github": "mhart",
+    "twitter": "hichaelmart"
+  },
+  {
+    "name": "Michael Nisi",
+    "github": "michaelnisi",
+    "url": "https://troubled.pro"
+  },
+  {
+    "name": "Monty Anderson",
+    "github": "montyanderson",
+    "url": "http://montyanderson.net"
+  },
+  {
+    "name": "mscdex",
+    "github": "mscdex"
+  },
+  {
+    "name": "Nathan Shively-Sanders",
+    "github": "sandersn"
+  },
+  {
+    "name": "Nicholas Westlake",
+    "email": "nicholasredlin@gmail.com",
+    "github": "nrw",
+    "npm": "nrw"
+  },
+  {
+    "name": "Nicola Del Gobbo",
+    "github": "NickNaso"
+  },
+  {
+    "name": "Nolan Lawson",
+    "email": "nolan@nolanlawson.com",
+    "github": "nolanlawson",
+    "npm": "nolanlawson",
+    "mastodon": "@nolan@toot.cafe",
+    "url": "https://nolanlawson.com"
+  },
+  {
+    "name": "Oguz Bastemur",
+    "email": "obastemur@gmail.com",
+    "github": "obastemur",
+    "npm": "obastemur",
+    "twitter": "obastemur",
+    "url": "https://obastemur.com"
+  },
+  {
+    "name": "Paolo Fragomeni",
+    "email": "paolo@async.ly",
+    "github": "hxoht",
+    "npm": "hij1nx",
+    "twitter": "hxoht"
+  },
+  {
+    "name": "Pascal Temel",
+    "github": "PascalTemel"
+  },
+  {
+    "name": "Patrick",
+    "github": "guybrush",
+    "url": "https://guybrush.github.io"
+  },
+  {
+    "name": "Pedro Teixeira",
+    "email": "i@pgte.me",
+    "github": "pgte",
+    "npm": "pgte",
+    "twitter": "pgte",
+    "url": "http://pgte.me"
+  },
+  {
+    "name": "Prayag Verma",
+    "github": "pra85"
+  },
+  {
+    "name": "Preston Skupinski",
+    "github": "pskupinski"
+  },
+  {
+    "name": "RasmusErik Voel Jensen",
+    "github": "rasmuserik",
+    "url": "http://solsort.com"
+  },
+  {
+    "name": "Richard Littauer",
+    "github": "RichardLitt",
+    "url": "https://burntfen.com"
+  },
+  {
+    "name": "Rod Vagg",
+    "email": "r@va.gg",
+    "github": "rvagg",
+    "npm": "rvagg",
+    "twitter": "rvagg",
+    "url": "http://r.va.gg"
+  },
+  {
+    "name": "Ryan Oles",
+    "github": "rh0",
+    "url": "https://electro.pizza/"
+  },
+  {
+    "name": "Ryan Ramage",
+    "email": "ryan.ramage@gmail.com",
+    "github": "ryanramage"
+  },
+  {
+    "name": "Sharvil Nanavati",
+    "github": "sharvil"
+  },
+  {
+    "name": "Tapani Moilanen",
+    "github": "Tapppi"
+  },
+  {
+    "name": "Thomas Watson",
+    "github": "watson",
+    "twitter": "wa7son"
+  },
+  {
+    "name": "Thorsten Lorenz",
+    "github": "thlorenz"
+  },
+  {
+    "name": "Tim Kuijsten",
+    "github": "timkuijsten",
+    "mastodon": "@timkuijsten@mastodon.social"
+  },
+  {
+    "name": "Tim Oxley",
+    "github": "timoxley",
+    "twitter": "secoif"
+  },
+  {
+    "name": "Ville Rantala",
+    "github": "vjrantal"
+  },
+  {
+    "name": "Vincent Weevers",
+    "email": "mail@vincentweevers.nl",
+    "github": "vweevers",
+    "npm": "vweevers",
+    "twitter": "vweevers",
+    "url": "https://vincentweevers.nl"
+  },
+  {
+    "name": "Will White",
+    "github": "willwhite"
+  },
+  {
+    "name": "wouter bolsterlee",
+    "github": "wbolster",
+    "url": "https://wouter.bolsterl.ee/"
+  },
+  {
+    "name": "Yaniv Kessler",
+    "github": "kessler",
+    "url": "http://blog.yanivkessler.com"
+  },
+  {
+    "name": "Yichao 'Peak' Ji",
+    "github": "peakji"
+  },
+  {
+    "name": "Yoshua Wuyts",
+    "email": "yoshuawuyts@gmail.com",
+    "github": "yoshuawuyts",
+    "npm": "yoshuawuyts",
+    "twitter": "yoshuawuyts",
+    "url": "https://yoshuawuyts.com"
   }
 ]
