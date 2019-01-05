@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/level/community",
   "keywords": [
+    "level",
     "leveldb",
     "community",
     "npm"
