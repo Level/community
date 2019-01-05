@@ -25,8 +25,6 @@ See the [`CONTRIBUTING.md`](https://github.com/level/community/blob/master/CONTR
 
 ## License
 
-Copyright &copy; 2012-present `Level` contributors.
-
-`Level` projects are licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included [`LICENSE.md`](https://github.com/level/community/blob/master/LICENSE.md) file for more details.
+[MIT](LICENSE.md) © 2012-present [Contributors](CONTRIBUTORS.md).
 
 [level-badge]: http://leveldb.org/img/badge.svg
