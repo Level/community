@@ -17,16 +17,14 @@ console.log(JSON.stringify(contributors, null, 2))
 
 ## Contributing
 
-`Level` projects are **OPEN Open Source Projects**. This means that:
+[`Level/community`](https://github.com/Level/community) is an **OPEN Open Source Project**. This means that:
 
-> Individuals making significant and valuable contributions are given commit-access to a project to contribute as they see fit. A project is more like an open wiki than a standard guarded open source project.
+> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
 
-See the [`CONTRIBUTING.md`](https://github.com/level/community/blob/master/CONTRIBUTING.md) file for more details.
+See the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.
 
 ## License
 
-Copyright &copy; 2012-present `Level` contributors.
-
-`Level` projects are licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included [`LICENSE.md`](https://github.com/level/community/blob/master/LICENSE.md) file for more details.
+[MIT](LICENSE.md) © 2012-present [Contributors](CONTRIBUTORS.md).
 
 [level-badge]: http://leveldb.org/img/badge.svg

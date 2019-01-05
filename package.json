@@ -1,19 +1,30 @@
 {
   "name": "level-community",
-  "description": "Meta data on members of the LevelDB community",
   "version": "3.0.0",
+  "description": "Meta data on members of the LevelDB community",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && hallmark",
+    "hallmark": "hallmark --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "hallmark": "^0.1.0",
+    "standard": "^12.0.1"
+  },
+  "hallmark": {
+    "community": "."
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/level/community.git"
+    "url": "https://github.com/Level/community.git"
   },
-  "homepage": "https://github.com/level/community",
+  "homepage": "https://github.com/Level/community",
   "keywords": [
+    "level",
     "leveldb",
     "community",
     "npm"
-  ],
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "license": "MIT"
+  ]
 }
