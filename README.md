@@ -17,11 +17,11 @@ console.log(JSON.stringify(contributors, null, 2))
 
 ## Contributing
 
-`Level` projects are **OPEN Open Source Projects**. This means that:
+[`Level/community`](https://github.com/Level/community) is an **OPEN Open Source Project**. This means that:
 
-> Individuals making significant and valuable contributions are given commit-access to a project to contribute as they see fit. A project is more like an open wiki than a standard guarded open source project.
+> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
 
-See the [`CONTRIBUTING.md`](https://github.com/level/community/blob/master/CONTRIBUTING.md) file for more details.
+See the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.
 
 ## License
 
