@@ -8,9 +8,9 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/level/community.git"
+    "url": "https://github.com/Level/community.git"
   },
-  "homepage": "https://github.com/level/community",
+  "homepage": "https://github.com/Level/community",
   "keywords": [
     "level",
     "leveldb",
