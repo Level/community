@@ -6,10 +6,13 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && hallmark",
-    "hallmark": "hallmark --fix"
+    "hallmark": "hallmark --fix",
+    "dependency-check": "dependency-check .",
+    "prepublishOnly": "npm run dependency-check"
   },
   "dependencies": {},
   "devDependencies": {
+    "dependency-check": "^3.3.0",
     "hallmark": "^0.1.0",
     "standard": "^12.0.1"
   },
