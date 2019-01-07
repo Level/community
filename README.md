@@ -8,6 +8,16 @@
 
 When creating a new project. Either link to this repository or include it as a dependency in `package.json`.
 
+## What is Level?
+
+**Level is a Node.js library and community for creating embedded databases - think SQLite, but non relational!**
+
+It was first and foremost inspired by [LevelDB](https://github.com/google/leveldb), a simple key-value store built by Google. It's used in Google Chrome and many other products. LevelDB supports arbitrary byte arrays as both keys and values, singular get, put and delete operations, batched put and delete, bi-directional iterators and simple compression using the very fast [Snappy](http://google.github.io/snappy/) algorithm.
+
+The way you iterate over a LevelDB makes it very usable for a myriad of use cases! LevelDB stores entries sorted lexicographically by keys, which makes the [streaming interface](https://opencollective.com/level#createReadStream) of `levelup` that exposes LevelDB iterators as [Readable Streams](https://nodejs.org/docs/latest/api/stream.html#stream_readable_streams) a very powerful query mechanism.
+
+It's flexible in another major respect, that is that the underlying storage backends are swappable! The most common store is [leveldown](https://github.com/level/leveldown/) which provides a pure C++ binding to LevelDB. [Many alternative stores are available](https://github.com/Level/awesome/#stores) such as [level.js](https://github.com/level/level.js) in the browser or [memdown](https://github.com/level/memdown) for an in-memory store. They typically support strings and Buffers for both keys and values. For a richer set of data types you can wrap the store with [encoding-down](https://github.com/level/encoding-down).
+
 ## API
 
 Contributors can be accessed from code by:
