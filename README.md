@@ -1,6 +1,6 @@
 # level-community
 
-> Gathers common information related to projects in the `Level` community
+> A place for general discussion, cross-repo efforts and common information related to projects in the `Level` community.
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
