@@ -6,8 +6,6 @@
 [![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/level/sponsors/badge.svg?color=orange)](#sponsors)
 
-When creating a new project. Either link to this repository or include it as a dependency in `package.json`.
-
 ## What is Level?
 
 **Level is a Node.js library and community for creating embedded databases - think SQLite, but non relational!**
@@ -26,6 +24,8 @@ Contributors can be accessed from code by:
 var contributors = require('level-community').contributors
 console.log(JSON.stringify(contributors, null, 2))
 ```
+
+When creating a new project. Either link to this repository or include it as a dependency in `package.json`.
 
 ## Contributing
 
