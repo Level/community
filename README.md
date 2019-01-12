@@ -8,24 +8,28 @@
 
 ## What is Level?
 
-**Level is a Node.js library and community for creating embedded databases - think SQLite, but non relational!**
+**Level is a community and a collection of Node.js modules for creating transparent, isomorphic databases. A solid set of primitives enable powerful databases to be built in userland.**
 
-It was first and foremost inspired by [LevelDB](https://github.com/google/leveldb), a simple key-value store built by Google. It's used in Google Chrome and many other products. LevelDB supports arbitrary byte arrays as both keys and values, singular get, put and delete operations, batched put and delete, bi-directional iterators and simple compression using the very fast [Snappy](https://github.com/google/snappy) algorithm.
+At its core are simple key-value stores that follow the characteristics of [LevelDB](https://github.com/google/leveldb). LevelDB is a key-value store built by Google, used in Google Chrome and many other products. It supports arbitrary byte arrays as both keys and values, singular reads and writes, batched writes and bi-directional iterators. LevelDB sorts entries lexicographically by keys which, when combined with ranged iterators, makes for a very powerful query mechanism.
 
-The way you iterate over a LevelDB makes it very usable for a myriad of use cases! LevelDB stores entries sorted lexicographically by keys, which makes the [streaming interface](https://github.com/Level/level#createReadStream) of `levelup` that exposes LevelDB iterators as [Readable Streams](https://nodejs.org/docs/latest/api/stream.html#stream_readable_streams) a very powerful query mechanism.
+On top of these proven LevelDB concepts, Level modules provide idiomatic Node.js interfaces such as [streams](https://nodejs.org/api/stream.html), [events](https://nodejs.org/api/events.html) and [buffers](https://nodejs.org/api/buffer.html), offer a rich set of data types through [encodings](https://github.com/Level/encoding-down) and allow for extensions like [`subleveldown`](https://github.com/Level/subleveldown) to split a database into evented sections.
 
-It's flexible in another major respect, that is that the underlying storage backends are swappable! The most common store is [leveldown](https://github.com/Level/leveldown/) which provides a pure C++ binding to LevelDB. [Many alternative stores are available](https://github.com/Level/awesome/#stores) such as [level-js](https://github.com/Level/level-js) in the browser or [memdown](https://github.com/Level/memdown) for an in-memory store. They typically support strings and Buffers for both keys and values. For a richer set of data types you can wrap the store with [encoding-down](https://github.com/Level/encoding-down).
+Stores are typically wrapped with [`levelup`](https://github.com/Level/levelup), so that one can transparently swap the underlying store and target a wide range of runtime environments. The most common store is [`leveldown`](https://github.com/Level/leveldown) which provides a pure C++ binding to LevelDB. [Many alternative stores are available](https://github.com/Level/awesome/#stores) such as [`level-js`](https://github.com/Level/level-js) in the browser or [`memdown`](https://github.com/Level/memdown) for an in-memory store.
+
+**Databases built with modules from [`Level`](https://github.com/Level) and the larger ecosystem can be embedded, networked, indexed, replicated, persistent, transient, anything you can think of. To help sustain `Level` and its large body of work, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level), [npm](https://www.npmjs.com/) packages and (soon) [our website](http://leveldb.org). 💖**
+
+PS. Are you looking for code? The [`level`](https://github.com/Level/level) module is the recommended way to get started. Visit [`awesome`](https://github.com/Level/awesome) to discover more modules and feel free to ask for help in [`community`](https://github.com/Level/community) or a more specific repository at any time.
 
 ## API
 
-Contributors can be accessed from code by:
+This repository also holds a small amount of metadata on past and present contributors. They can be accessed from code by:
 
 ```js
 var contributors = require('level-community').contributors
-console.log(JSON.stringify(contributors, null, 2))
+console.log(contributors)
 ```
 
-When creating a new project. Either link to this repository or include it as a dependency in `package.json`.
+We use this metadata across the board to render [`CONTRIBUTORS.md`](CONTRIBUTORS.md) files based on git history. If you have contributed to one or more Level repositories in the past but don't see social metadata next to your name, add yourself to [`contributors.json`](contributors.json) and send us a PR.
 
 ## Contributing
 
