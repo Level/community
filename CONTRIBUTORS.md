@@ -2,7 +2,7 @@
 
 | Name                 | GitHub                                                 | Social                                                              |
 | :------------------- | :----------------------------------------------------- | :------------------------------------------------------------------ |
-| **Lars-Magnus Skog** | [**@ralphtheninja**](https://github.com/ralphtheninja) | [**@ralph@social.weho.st**](https://social.weho.st/@ralph)          |
+| **Lars-Magnus Skog** | [**@ralphtheninja**](https://github.com/ralphtheninja) |                                                                     |
 | **Vincent Weevers**  | [**@vweevers**](https://github.com/vweevers)           | [**@vweevers@twitter**](https://twitter.com/vweevers)               |
 | **Huan LI**          | [**@zixia**](https://github.com/zixia)                 | [**@zixia@twitter**](https://twitter.com/zixia)                     |
 | **Anton Whalley**    | [**@no9**](https://github.com/no9)                     | [**@dhigit9@twitter**](https://twitter.com/dhigit9)                 |
