@@ -8,7 +8,7 @@
 
 ## What is Level?
 
-**Level is a community and a collection of Node.js modules for creating transparent, isomorphic databases. A solid set of primitives enable powerful databases to be built in userland. They can be embedded or networked, persistent or transient, in short, tailored to your needs.**
+**Level is a community and a collection of Node.js modules for creating transparent databases. A solid set of primitives enable powerful databases to be built in userland. They can be embedded or networked, persistent or transient - in short, tailored to your needs.**
 
 At the core of Level are simple key-value stores that follow the characteristics of [LevelDB](https://github.com/google/leveldb). LevelDB is a key-value store built by Google, used in Google Chrome and many other products. It supports arbitrary byte arrays as both keys and values, singular reads and writes, batched writes and bi-directional iterators. LevelDB sorts entries lexicographically by keys which, when combined with ranged iterators, makes for a very powerful query mechanism.
 
