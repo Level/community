@@ -1,8 +1,6 @@
-## `Level` projects are **OPEN Open Source Projects**
+# Contributing
 
-* * *
-
-## What?
+**[Level](https://github.com/Level) projects are _OPEN Open Source Projects_.**
 
 Individuals making significant and valuable contributions are given commit-access to a project to contribute as they see fit. A project is more like an open wiki than a standard guarded open source project.
 
@@ -23,5 +21,3 @@ Declaring formal releases remains the prerogative of the project maintainer(s).
 ## Changes to this arrangement
 
 This is an experiment and feedback is welcome! This document may also be subject to pull-requests or changes by contributors where you believe you have something valuable to add or change.
-
-* * *
