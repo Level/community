@@ -14,7 +14,7 @@
   "devDependencies": {
     "dependency-check": "^3.3.0",
     "hallmark": "^1.0.0",
-    "standard": "^13.0.2"
+    "standard": "^14.0.0"
   },
   "hallmark": {
     "community": "."
