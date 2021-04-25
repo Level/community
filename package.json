@@ -1,7 +1,7 @@
 {
   "name": "level-community",
   "version": "3.0.0",
-  "description": "Meta data on members of the LevelDB community",
+  "description": "Metadata on members of the Level community",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,10 @@
     "dependency-check": "dependency-check .",
     "prepublishOnly": "npm run dependency-check"
   },
+  "files": [
+    "index.js",
+    "contributors.json"
+  ],
   "dependencies": {},
   "devDependencies": {
     "dependency-check": "^3.3.0",
@@ -17,7 +21,7 @@
     "standard": "^16.0.3"
   },
   "hallmark": {
-    "community": "."
+    "contributors": false
   },
   "repository": {
     "type": "git",
