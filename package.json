@@ -6,22 +6,15 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && hallmark",
-    "hallmark": "hallmark --fix",
-    "dependency-check": "dependency-check .",
-    "prepublishOnly": "npm run dependency-check"
+    "hallmark": "hallmark fix"
   },
   "files": [
     "index.js",
     "contributors.json"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "dependency-check": "^3.3.0",
-    "hallmark": "^3.1.0",
-    "standard": "^16.0.3"
-  },
-  "hallmark": {
-    "contributors": false
+    "hallmark": "^4.0.0",
+    "standard": "^16.0.4"
   },
   "repository": {
     "type": "git",
