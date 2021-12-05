@@ -1,20 +1,15 @@
 {
   "name": "level-community",
   "version": "3.0.0",
-  "description": "Metadata on members of the Level community",
+  "description": "General discussion, cross-repository efforts and common information for projects in the community",
   "license": "MIT",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "standard && hallmark",
+    "test": "hallmark",
     "hallmark": "hallmark fix"
   },
-  "files": [
-    "index.js",
-    "contributors.json"
-  ],
   "devDependencies": {
-    "hallmark": "^4.0.0",
-    "standard": "^16.0.4"
+    "hallmark": "^4.0.0"
   },
   "repository": {
     "type": "git",

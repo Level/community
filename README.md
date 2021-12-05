@@ -1,10 +1,10 @@
 # level-community
 
-> General discussion, cross-repo efforts and common information for projects in the community.
+**General discussion, cross-repository efforts and common information for projects in the community.**
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![Test](https://github.com/Level/community/actions/workflows/test.yml/badge.svg)](https://github.com/Level/community/actions/workflows/test.yml)
-[![Funding](https://opencollective.com/level/tiers/badge.svg)](#donate)
+[![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective&logoColor=fff)](https://opencollective.com/level)
 
 ## What is Level?
 
@@ -145,11 +145,13 @@ _Is your name missing? Send us a pull request!_
 
 ## API
 
-This repository also holds a small amount of metadata on past and present contributors. They can be accessed from code by:
+This repository also used to hold a small amount of metadata on past and present contributors. They can be accessed from code by:
 
 ```js
 console.log(require('level-community'))
 ```
+
+This metadata is no longer maintained and the npm package will be deprecated at some point. Contributors are instead documented in this README under [People](#people).
 
 ## Contributing
 
@@ -161,15 +163,7 @@ See the [Contribution Guide](https://github.com/Level/community/blob/master/CONT
 
 ## Donate
 
-Support us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work. Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level) and [npm](https://www.npmjs.com/) packages. 💖
-
-**Active financial contributors**
-
-[![Open Collective backers](https://opencollective.com/level/tiers/backer.svg?button=false)](https://opencollective.com/level) [![Open Collective sponsors](https://opencollective.com/level/tiers/sponsor.svg?button=false)](https://opencollective.com/level)
-
-**Past financial contributors**
-
-[![Open Collective sponsors](https://opencollective.com/level/sponsors.svg?button=false&avatarHeight=36)](https://opencollective.com/level) [![Open Collective backers](https://opencollective.com/level/backers.svg?button=false&avatarHeight=36)](https://opencollective.com/level)
+Support us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work.
 
 ## License
 
