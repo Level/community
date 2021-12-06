@@ -47,7 +47,7 @@ The [`level`](https://github.com/Level/level) module is the recommended way to g
 - `level-mem` to keep data in-memory (Node.js and browsers)
 - `level-rocksdb` to use RocksDB instead of LevelDB (Node.js only).
 
-Visit [`awesome`](https://github.com/Level/awesome) to discover more modules.
+Visit [`level/awesome`](https://github.com/Level/awesome) to discover more modules.
 
 ### What is `abstract-level`?
 
