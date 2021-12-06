@@ -42,16 +42,11 @@ To bring those concepts to Node.js and other JavaScript runtimes, Level utilizes
 
 ### Where do I start?
 
-The [`level`](https://github.com/Level/level) module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way, you might like:
-
-- `level-mem` to keep data in-memory (Node.js and browsers)
-- `level-rocksdb` to use RocksDB instead of LevelDB (Node.js only).
-
-Visit [`level/awesome`](https://github.com/Level/awesome) to discover more modules.
+The [`level`](https://github.com/Level/level) module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like `level-mem` for example, which exports the same API as `level` but stores data in-memory. Visit [`level/awesome`](https://github.com/Level/awesome) to discover more modules.
 
 ### What is `abstract-level`?
 
-_If you are new to Level, there is a quick answer: `abstract-level` is the new core of Level on top of which several databases are (or will be) implemented. If you're already familiar with Level modules (before 2022) and have used `level`, `levelup`, `abstract-leveldown`, `encoding-down` or `deferred-leveldown`, read on._
+_If you are new to Level, there is a quick answer: `abstract-level` is the new core of Level on top of which several databases are (or will be) implemented. Read on if you're already familiar with Level modules (before 2022) and have used `level`, `levelup`, `abstract-leveldown`, `encoding-down` or `deferred-leveldown`._
 
 Back in 2012, [`levelup`](https://github.com/Level/levelup) offered a Node.js binding for Google's LevelDB. Authored by Rod Vagg, `levelup` exposed the features of LevelDB in a Node.js-friendly way. It had streams, binary support, encodings... all the goodies. Later on, the binding was moved to `leveldown`, so that other stores could be swapped in while retaining the friendly API of `levelup`.
 
