@@ -36,33 +36,73 @@
 
 At the core of Level are simple key-value stores that follow the characteristics of [LevelDB](https://github.com/google/leveldb). LevelDB is a key-value store built by Google, used in Google Chrome and many other products. It supports arbitrary byte arrays as both keys and values, singular reads and writes, batched writes and bi-directional iterators. LevelDB sorts entries lexicographically by keys which, when combined with ranged iterators, makes for a very powerful query mechanism.
 
-To bring those concepts to Node.js and other JavaScript runtimes, Level utilizes idiomatic Node.js interfaces like [streams](https://nodejs.org/api/stream.html), [events](https://nodejs.org/api/events.html) and [buffers](https://nodejs.org/api/buffer.html). It offers a rich set of data types through [encodings](https://github.com/Level/encoding-down) and allows for extensions like [`subleveldown`](https://github.com/Level/subleveldown) to split a database into evented sections. Underlying stores can be easily swapped to target a wide range of runtime environments. The most common store is [`leveldown`](https://github.com/Level/leveldown) which is a pure C++ binding to LevelDB. [Many alternatives are available](https://github.com/Level/awesome/#stores) such as [`level-js`](https://github.com/Level/level-js) in the browser or [`memdown`](https://github.com/Level/memdown) for an in-memory store.
+To bring those concepts to Node.js and other JavaScript runtimes, Level utilizes idiomatic Node.js interfaces like [streams](https://nodejs.org/api/stream.html), [events](https://nodejs.org/api/events.html) and [buffers](https://nodejs.org/api/buffer.html). It offers a rich set of data types through [encodings][encoding-down] and allows for extensions like [`subleveldown`][subleveldown] to split a database into evented sections. Underlying stores can be easily swapped to target a wide range of runtime environments. The most common store is [`leveldown`][leveldown] which is a pure C++ binding to LevelDB. [Many alternatives are available](https://github.com/Level/awesome/#stores) such as [`level-js`][level-js] in the browser or [`memdown`][memdown] for an in-memory store.
 
 ## FAQ
 
 ### Where do I start?
 
-The [`level`](https://github.com/Level/level) module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like [`level-mem`](https://github.com/Level/mem) for example, which exports the same API as `level` but stores data in-memory. Visit [`Level/awesome`](https://github.com/Level/awesome) to discover more modules.
+The [`level`][level] module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like [`level-mem`][level-mem] for example, which exports the same API as `level` but stores data in-memory. Visit [`Level/awesome`](https://github.com/Level/awesome) to discover more modules.
 
 ### What is `abstract-level`?
 
-_If you are new to Level, there is a quick answer: [`abstract-level`](https://github.com/Level/abstract-level) is the new core of Level on top of which several databases are (or will be) implemented. Read on if you're already familiar with Level modules (before 2022) and have used [`level`](https://github.com/Level/level), [`levelup`](https://github.com/Level/levelup), [`abstract-leveldown`](https://github.com/Level/abstract-leveldown), [`encoding-down`](https://github.com/Level/encoding-down) or [`deferred-leveldown`](https://github.com/Level/deferred-leveldown)._
+_If you are new to Level, there is a quick answer: [`abstract-level`][abstract-level] is the new core of Level on top of which several databases are (or will be) implemented. Read on if you're already familiar with Level modules (before 2022) and have used [`level`][level], [`levelup`][levelup], [`abstract-leveldown`][abstract-leveldown], [`encoding-down`][encoding-down] or [`deferred-leveldown`][def-ld]._
 
-Back in 2012, [`levelup`](https://github.com/Level/levelup) offered a Node.js binding for Google's LevelDB. Authored by Rod Vagg, `levelup` exposed the features of LevelDB in a Node.js-friendly way. It had streams, binary support, encodings... all the goodies. Later on, the binding was moved to [`leveldown`](https://github.com/Level/leveldown), so that other stores could be swapped in while retaining the friendly API of `levelup`.
+Back in 2012, [`levelup`][levelup] offered a Node.js binding for Google's LevelDB. Authored by Rod Vagg, `levelup` exposed the features of LevelDB in a Node.js-friendly way. It had streams, binary support, encodings... all the goodies. Later on, the binding was moved to [`leveldown`][leveldown], so that other stores could be swapped in while retaining the friendly API of `levelup`.
 
-This is when "up" vs "down" naming was born, where databases followed the formula of "level = levelup + leveldown". For example, `level-mem` was a convenience package that bundled `levelup` with `memdown`. The [`abstract-leveldown`](https://github.com/Level/abstract-leveldown) module offered a lower-level abstraction for the "down" part, to encapsulate common logic between "down" stores. Many such stores were written, replacing LevelDB with IndexedDB, RocksDB, in-memory red-black trees, relational databases and more.
+This is when "up" vs "down" naming was born, where databases followed the formula of "level = levelup + leveldown". For example, `level-mem` was a convenience package that bundled `levelup` with `memdown`. The [`abstract-leveldown`][abstract-leveldown] module offered a lower-level abstraction for the "down" part, to encapsulate common logic between "down" stores. Many such stores were written, replacing LevelDB with IndexedDB, RocksDB, in-memory red-black trees, relational databases and more.
 
-Around 2017, further parts were extracted from `levelup` and moved to single-purpose modules. This effectively introduced the concept of "layers", where an implementation of `abstract-leveldown` wasn't necessarily a storage for `levelup` but could also wrap another `abstract-leveldown` implementation. For example, `levelup` encoding logic was extracted to [`encoding-down`](https://github.com/Level/encoding-down). This changed the database formula to "level = levelup + encoding-down + leveldown". Or in other words: "levelup + layer + layer".
+Around 2017, further parts were extracted from `levelup` and moved to single-purpose modules. This effectively introduced the concept of "layers", where an implementation of `abstract-leveldown` wasn't necessarily a storage for `levelup` but could also wrap another `abstract-leveldown` implementation. For example, `levelup` encoding logic was extracted to [`encoding-down`][encoding-down]. This changed the database formula to "level = levelup + encoding-down + leveldown". Or in other words: "levelup + layer + layer".
 
 This highly modular architecture led to clean code, where each module had a single responsibility. By this time, the overall API had settled and matured, some contributors moved on to other exciting things and the primary remaining effort was maintenance. This posed new challenges. We worked on test suites, added automated browser tests, code coverage and database manifests.
 
 Yet, releases too often required canary testing in dependents. It was hard to predict the effect of a change. In addition, documentation became fragmented and some modules actually suffered from the high modularity, having to peel off layers to customize behavior. At the same time, we could see that typical usage of a Level database still involved encodings and the other goodies that the original `levelup` had.
 
-Enter [`abstract-level`](https://github.com/Level/abstract-level). This module merges `levelup`, `encoding-down` and `abstract-leveldown` into a single codebase. There is more to say, but [`abstract-level`](https://github.com/Level/abstract-level) is a work in progress that hasn't yet proven itself, so we'll end here for now. Stay tuned!
+Enter [`abstract-level`][abstract-level]. This module merges `levelup`, `encoding-down` and `abstract-leveldown` into a single codebase. Instead of implementing behaviors "vertically" in layers, it is done per database method. Performance-wise `abstract-level` is currently on par with the old modules, or slightly (around 5%) faster than. GC pressure is lower because methods allocate less callback functions. Custom (userland) database methods also benefit from the new architecture, because they can reuse utility methods included in `abstract-level` rather than a layer having to detect and wrap custom methods.
+
+Lastly, `abstract-level` comes with new features, some of which were not possible to implement before. Among them: Uint8Array support, builtin sublevels, atomically committing data to multiple sublevels, and reading multiple or all entries from an iterator in one call.
 
 ### How do I upgrade to `abstract-level`?
 
-_This section will explain how to replace old modules (that are based on `levelup` and `abstract-leveldown`) with new `abstract-level` based modules. At the time of writing, no `abstract-level` implementation has been published yet._
+We've put together several upgrade guides for different modules. For example, if you're currently using `level@7` and no other modules (ignoring transitive dependencies) then it will suffice to read the upgrade guide of `level@8`.
+
+Naming-wise, databases generally use an npm package name in the form of `*-level` while utilities and plugins are called `level-*`. This replaces the [down versus up](https://github.com/Level/abstract-level/issues/6) naming scheme. Similarly, while it was previously helpful for documentation to distinguish between "database" and its "underlying store", now you will mostly just encounter the term "database".
+
+To upgrade, please consult the following table. If you use a combination of the modules listed here, each must be upgraded to its `abstract-level` equivalent.
+
+| Old module                                   | New module                           | Named export <sup>5</sup> | Upgrade guide                               |
+| :------------------------------------------- | :----------------------------------- | :------------------------ | :------------------------------------------ |
+| [`level`][level] <= 7                        | [`level`][level] >= 8 <sup>1</sup>   | `Level`                   | `level@8`<sup>4</sup> (_not yet available_) |
+| [`abstract-leveldown`][abstract-leveldown]   | [`abstract-level`][abstract-level]   | `AbstractLevel`           | [`abstract-level@1`][abstract-level@1]      |
+| [`levelup`][levelup]                         | n/a                                  | n/a                       | Depends <sup>3</sup>                        |
+| `level` or `levelup` with streams            | [`level-read-stream`][l-read-stream] | `EntryStream`             | [`level-read-stream@1`][l-read-stream@1]    |
+| [`leveldown`][leveldown]                     | `classic-level`                      | `ClassicLevel`            | _Not yet available_                         |
+| [`level-mem`][level-mem]                     | `memory-level`                       | `MemoryLevel`             | _Not yet available_                         |
+| [`memdown`][memdown]                         | `memory-level`                       | `MemoryLevel`             | _Not yet available_                         |
+| [`level-js`][level-js]                       | `browser-level`                      | `BrowserLevel`            | _Not yet available_                         |
+| [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
+| [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
+| [`multileveldown`][multileveldown]           | `many-level`                         | `ManyLevel`               | _Not yet available_                         |
+| [`level-party`][level-party]                 | `rave-level`                         | `RaveLevel`               | _Not yet available_                         |
+| [`subleveldown`][subleveldown]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
+| [`deferred-leveldown`][def-ld]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
+| [`encoding-down`][encoding-down]<sup>2</sup> | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
+| [`level-errors`][level-errors]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
+| [`level-packager`][level-packager]           | n/a                                  | n/a                       | n/a                                         |
+| [`level-supports`][supports] <= 2            | [`level-supports`][supports] >= 3    | `supports`                | n/a                                         |
+| [`level-codec`][level-codec] <sup>6</sup>    | [`level-transcoder`][transcoder]     | `Transcoder`              | [`level-transcoder@1`][transcoder@1]        |
+| [`level-test`][level-test]                   | n/a                                  | n/a                       | _Not yet available_                         |
+
+<small>
+
+1. Will export `classic-level` in Node and `browser-level` in browsers.
+2. Functionality is now included in `abstract-level`.
+3. If the module that you're wrapping with `levelup` is listed here then refer to that module's upgrade guide, else see [`abstract-level@1`][abstract-level@1].
+4. If browser support is not needed, alternatively use `classic-level` which has the same API.
+5. Most new modules use named exports, for example `const { ClassicLevel } = require('classic-level')` instead of `const leveldown = require('leveldown')`.
+6. Encodings that follow the `level-codec` interface (without `level-codec` as a dependency) can still be used.
+
+</small>
 
 ### Where can I get support?
 
@@ -230,3 +270,53 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 [MIT](LICENSE)
 
 [level-badge]: https://leveljs.org/img/badge.svg
+
+[abstract-level]: https://github.com/Level/abstract-level
+
+[abstract-level@1]: https://github.com/Level/abstract-level/blob/main/UPGRADING.md#100
+
+[abstract-leveldown]: https://github.com/Level/abstract-leveldown
+
+[def-ld]: https://github.com/Level/deferred-leveldown
+
+[encoding-down]: https://github.com/Level/encoding-down
+
+[level]: https://github.com/Level/level
+
+[level-codec]: https://github.com/Level/codec
+
+[level-errors]: https://github.com/Level/errors
+
+[level-js]: https://github.com/Level/level-js
+
+[level-mem]: https://github.com/Level/mem
+
+[level-packager]: https://github.com/Level/packager
+
+[level-party]: https://github.com/Level/party
+
+[l-read-stream]: https://github.com/Level/read-stream
+
+[l-read-stream@1]: https://github.com/Level/read-stream/blob/main/UPGRADING.md#100
+
+[level-rocksdb]: https://github.com/Level/level-rocksdb
+
+[supports]: https://github.com/Level/supports
+
+[level-test]: https://github.com/Level/level-test
+
+[transcoder]: https://github.com/Level/transcoder
+
+[transcoder@1]: https://github.com/Level/transcoder/blob/main/UPGRADING.md#100
+
+[leveldown]: https://github.com/Level/leveldown
+
+[levelup]: https://github.com/Level/levelup
+
+[memdown]: https://github.com/Level/memdown
+
+[multileveldown]: https://github.com/Level/multileveldown
+
+[rocksdb]: https://github.com/Level/rocksdb
+
+[subleveldown]: https://github.com/Level/subleveldown
