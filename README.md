@@ -2,7 +2,7 @@
 
 **General discussion, cross-repository efforts and common information for projects in the community.**
 
-> :pushpin: Which module should I use? What is `abstract-level`? What happened to `levelup`? Head over to [Frequently Asked Questions](https://github.com/Level/community#faq).
+> :pushpin: Which module should I use? What is `abstract-level`? Head over to the [FAQ](https://github.com/Level/community#faq).
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![Test](https://github.com/Level/community/actions/workflows/test.yml/badge.svg)](https://github.com/Level/community/actions/workflows/test.yml)
@@ -42,15 +42,15 @@ To bring those concepts to Node.js and other JavaScript runtimes, Level utilizes
 
 ### Where do I start?
 
-The [`level`](https://github.com/Level/level) module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like `level-mem` for example, which exports the same API as `level` but stores data in-memory. Visit [`level/awesome`](https://github.com/Level/awesome) to discover more modules.
+The [`level`](https://github.com/Level/level) module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like [`level-mem`](https://github.com/Level/mem) for example, which exports the same API as `level` but stores data in-memory. Visit [`Level/awesome`](https://github.com/Level/awesome) to discover more modules.
 
 ### What is `abstract-level`?
 
-_If you are new to Level, there is a quick answer: `abstract-level` is the new core of Level on top of which several databases are (or will be) implemented. Read on if you're already familiar with Level modules (before 2022) and have used `level`, `levelup`, `abstract-leveldown`, `encoding-down` or `deferred-leveldown`._
+_If you are new to Level, there is a quick answer: [`abstract-level`](https://github.com/Level/abstract-level) is the new core of Level on top of which several databases are (or will be) implemented. Read on if you're already familiar with Level modules (before 2022) and have used [`level`](https://github.com/Level/level), [`levelup`](https://github.com/Level/levelup), [`abstract-leveldown`](https://github.com/Level/abstract-leveldown), [`encoding-down`](https://github.com/Level/encoding-down) or [`deferred-leveldown`](https://github.com/Level/deferred-leveldown)._
 
-Back in 2012, [`levelup`](https://github.com/Level/levelup) offered a Node.js binding for Google's LevelDB. Authored by Rod Vagg, `levelup` exposed the features of LevelDB in a Node.js-friendly way. It had streams, binary support, encodings... all the goodies. Later on, the binding was moved to `leveldown`, so that other stores could be swapped in while retaining the friendly API of `levelup`.
+Back in 2012, [`levelup`](https://github.com/Level/levelup) offered a Node.js binding for Google's LevelDB. Authored by Rod Vagg, `levelup` exposed the features of LevelDB in a Node.js-friendly way. It had streams, binary support, encodings... all the goodies. Later on, the binding was moved to [`leveldown`](https://github.com/Level/leveldown), so that other stores could be swapped in while retaining the friendly API of `levelup`.
 
-This is when "up" vs "down" naming was born, where databases followed the formula of "level = levelup + leveldown". For example, `level-mem` was a convenience package that bundled `levelup` with `memdown`. The `abstract-leveldown` module offered a lower-level abstraction for the "down" part, to encapsulate common logic between "down" stores. Many such stores were written, replacing LevelDB with IndexedDB, RocksDB, in-memory red-black trees, relational databases and more.
+This is when "up" vs "down" naming was born, where databases followed the formula of "level = levelup + leveldown". For example, `level-mem` was a convenience package that bundled `levelup` with `memdown`. The [`abstract-leveldown`](https://github.com/Level/abstract-leveldown) module offered a lower-level abstraction for the "down" part, to encapsulate common logic between "down" stores. Many such stores were written, replacing LevelDB with IndexedDB, RocksDB, in-memory red-black trees, relational databases and more.
 
 Around 2017, further parts were extracted from `levelup` and moved to single-purpose modules. This effectively introduced the concept of "layers", where an implementation of `abstract-leveldown` wasn't necessarily a storage for `levelup` but could also wrap another `abstract-leveldown` implementation. For example, `levelup` encoding logic was extracted to [`encoding-down`](https://github.com/Level/encoding-down). This changed the database formula to "level = levelup + encoding-down + leveldown". Or in other words: "levelup + layer + layer".
 
@@ -72,7 +72,7 @@ You will generally find someone willing to help. Good questions get better and q
 
 ### Where can I follow progress?
 
-Most if not all activity happens on GitHub. See our [project board](https://github.com/orgs/Level/projects/3) to find out what we're working on. Any timelines there are just a rough indication of priority; we cannot guarantee that feature X or Y will actually be released on the given dates.
+Most if not all activity happens on GitHub. See our [project board](https://github.com/orgs/Level/projects/3) to find out what we're working on. Any timelines there are just a rough indication of priority. We cannot guarantee that feature X or Y will actually be released on the given dates.
 
 Subscribe to individual repositories to follow their progress. All releases are accompanied by a changelog and a GitHub Release, which gives you the option to only [subscribe to new releases](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository).
 
