@@ -36,13 +36,13 @@
 
 At the core of Level are simple key-value stores that follow the characteristics of [LevelDB](https://github.com/google/leveldb). LevelDB is a key-value store built by Google, used in Google Chrome and many other products. It supports arbitrary byte arrays as both keys and values, singular reads and writes, batched writes and bi-directional iterators. LevelDB sorts entries lexicographically by keys which, when combined with ranged iterators, makes for a very powerful query mechanism.
 
-To bring those concepts to Node.js and other JavaScript runtimes, Level utilizes idiomatic Node.js interfaces like [streams](https://nodejs.org/api/stream.html), [events](https://nodejs.org/api/events.html) and [buffers](https://nodejs.org/api/buffer.html). It offers a rich set of data types through [encodings][encoding-down] and allows for extensions like [`subleveldown`][subleveldown] to split a database into evented sections. Underlying stores can be easily swapped to target a wide range of runtime environments. The most common store is [`leveldown`][leveldown] which is a pure C++ binding to LevelDB. [Many alternatives are available](https://github.com/Level/awesome/#stores) such as [`level-js`][level-js] in the browser or [`memdown`][memdown] for an in-memory store.
+To bring those concepts to Node.js and other JavaScript runtimes, Level utilizes idiomatic Node.js interfaces like [streams](https://nodejs.org/api/stream.html), [events](https://nodejs.org/api/events.html) and [buffers](https://nodejs.org/api/buffer.html). It offers a rich set of data types through [encodings][encoding-down] and allows for extensions like [`subleveldown`][subleveldown] to split a database into evented sections. Underlying stores can be easily swapped to target a wide range of runtime environments. The most common store is [`leveldown`][leveldown] which is a pure C++ binding to LevelDB. [Many alternatives are available](https://github.com/Level/awesome/#stores) such as [`level-js`][level-js] in the browser or [`memory-level`][memory-level] for an in-memory database.
 
 ## FAQ
 
 ### Where do I start?
 
-The [`level`][level] module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like [`level-mem`][level-mem] for example, which exports the same API as `level` but stores data in-memory. Visit [`Level/awesome`](https://github.com/Level/awesome) to discover more modules.
+The [`level`][level] module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like [`memory-level`][memory-level] for example, which exports the same API as `level` but stores data in-memory. Visit [`Level/awesome`](https://github.com/Level/awesome) to discover more modules.
 
 ### What is `abstract-level`?
 
@@ -77,8 +77,8 @@ To upgrade, please consult the following table. If you use a combination of the 
 | [`levelup`][levelup]                         | n/a                                  | n/a                       | Depends <sup>3</sup>                        |
 | `level` or `levelup` with streams            | [`level-read-stream`][l-read-stream] | `EntryStream`             | [`level-read-stream@1`][l-read-stream@1]    |
 | [`leveldown`][leveldown]                     | `classic-level`                      | `ClassicLevel`            | _Not yet available_                         |
-| [`level-mem`][level-mem]                     | `memory-level`                       | `MemoryLevel`             | _Not yet available_                         |
-| [`memdown`][memdown]                         | `memory-level`                       | `MemoryLevel`             | _Not yet available_                         |
+| [`level-mem`][level-mem]                     | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
+| [`memdown`][memdown]                         | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
 | [`level-js`][level-js]                       | `browser-level`                      | `BrowserLevel`            | _Not yet available_                         |
 | [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
 | [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
@@ -301,13 +301,7 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 
 [level-rocksdb]: https://github.com/Level/level-rocksdb
 
-[supports]: https://github.com/Level/supports
-
 [level-test]: https://github.com/Level/level-test
-
-[transcoder]: https://github.com/Level/transcoder
-
-[transcoder@1]: https://github.com/Level/transcoder/blob/main/UPGRADING.md#100
 
 [leveldown]: https://github.com/Level/leveldown
 
@@ -315,8 +309,18 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 
 [memdown]: https://github.com/Level/memdown
 
+[memory-level]: https://github.com/Level/memory-level
+
+[memory-level@1]: https://github.com/Level/memory-level/blob/main/UPGRADING.md#100
+
 [multileveldown]: https://github.com/Level/multileveldown
 
 [rocksdb]: https://github.com/Level/rocksdb
 
 [subleveldown]: https://github.com/Level/subleveldown
+
+[supports]: https://github.com/Level/supports
+
+[transcoder]: https://github.com/Level/transcoder
+
+[transcoder@1]: https://github.com/Level/transcoder/blob/main/UPGRADING.md#100
