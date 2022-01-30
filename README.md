@@ -12,8 +12,8 @@
 
 <details><summary>Click to expand</summary>
 
-- [What is Level?](#what-is-level)
 - [FAQ](#faq)
+  - [What is Level?](#what-is-level)
   - [Where do I start?](#where-do-i-start)
   - [What is `abstract-level`?](#what-is-abstract-level)
   - [How do I upgrade to `abstract-level`?](#how-do-i-upgrade-to-abstract-level)
@@ -30,19 +30,19 @@
 
 </details>
 
-## What is Level?
-
-**Level is a community and a collection of Node.js modules for creating transparent databases. A solid set of primitives enable powerful databases to be built in userland. They can be embedded or networked, persistent or transient - in short, tailored to your needs.**
-
-At the core of Level are simple key-value stores that follow the characteristics of [LevelDB](https://github.com/google/leveldb). LevelDB is a key-value store built by Google, used in Google Chrome and many other products. It supports arbitrary byte arrays as both keys and values, singular reads and writes, batched writes and bi-directional iterators. LevelDB sorts entries lexicographically by keys which, when combined with ranged iterators, makes for a very powerful query mechanism.
-
-To bring those concepts to Node.js and other JavaScript runtimes, Level utilizes idiomatic Node.js interfaces like [streams](https://nodejs.org/api/stream.html), [events](https://nodejs.org/api/events.html) and [buffers](https://nodejs.org/api/buffer.html). It offers a rich set of data types through [encodings][encoding-down] and allows for extensions like [`subleveldown`][subleveldown] to split a database into evented sections. Underlying stores can be easily swapped to target a wide range of runtime environments. The most common store is [`leveldown`][leveldown] which is a pure C++ binding to LevelDB. [Many alternatives are available](https://github.com/Level/awesome/#stores) such as [`level-js`][level-js] in the browser or [`memory-level`][memory-level] for an in-memory database.
-
 ## FAQ
+
+### What is Level?
+
+**Level is a collection of Node.js modules for creating transparent databases. A solid set of primitives enable powerful databases to be built in userland. They can be embedded or networked, persistent or transient - in short, tailored to your needs.**
+
+At the heart of Level are key-value databases that follow the characteristics of [LevelDB](https://github.com/google/leveldb). They support binary keys and values, batched atomic writes and bi-directional iterators that read from a snapshot in time. Entries are sorted lexicographically by keys which, when combined with ranged iterators, makes for a powerful query mechanism. Level combines idiomatic JavaScript interfaces like async iterators with Node.js interfaces like [streams](https://nodejs.org/api/stream.html), [events](https://nodejs.org/api/events.html) and [buffers](https://nodejs.org/api/buffer.html). It offers a rich set of data types through encodings and can split a database into evented sections called sublevels.
+
+The underlying storage can be easily swapped by selecting a different database implementation, all sharing a common API and the same characteristics. Together they target a wide range of runtime environments: Node.js and Electron on Linux, Mac OS, Windows and FreeBSD, including ARM platforms like Raspberry Pi and Android, as well as Chrome, Firefox, Edge, Safari, iOS Safari and Chrome for Android.
 
 ### Where do I start?
 
-The [`level`][level] module is the recommended way to get started. It offers a persistent database that works in Node.js and browsers. To store data in a different way you might like [`memory-level`][memory-level] for example, which exports the same API as `level` but stores data in-memory. Visit [`Level/awesome`](https://github.com/Level/awesome) to discover more modules.
+The [`level`][level] module is the recommended way to get started. It offers a persistent database that works in both Node.js and browsers, backed by LevelDB and IndexedDB respectively. [Many alternatives](https://github.com/Level/awesome/#stores) are available. For example, [`memory-level`][memory-level] is an in-memory database backed by a red-black tree. Visit [`Level/awesome`](https://github.com/Level/awesome) to discover more modules.
 
 ### What is `abstract-level`?
 
@@ -58,7 +58,7 @@ This highly modular architecture led to clean code, where each module had a sing
 
 Yet, releases too often required canary testing in dependents. It was hard to predict the effect of a change. In addition, documentation became fragmented and some modules actually suffered from the high modularity, having to peel off layers to customize behavior. At the same time, we could see that typical usage of a Level database still involved encodings and the other goodies that the original `levelup` had.
 
-Enter [`abstract-level`][abstract-level]. This module merges `levelup`, `encoding-down` and `abstract-leveldown` into a single codebase. Instead of implementing behaviors "vertically" in layers, it is done per database method. Performance-wise `abstract-level` is currently on par with the old modules, or slightly (around 5%) faster than. GC pressure is lower because methods allocate less callback functions. Custom (userland) database methods also benefit from the new architecture, because they can reuse utility methods included in `abstract-level` rather than a layer having to detect and wrap custom methods.
+Enter [`abstract-level`][abstract-level]. This module merges `levelup`, `encoding-down` and `abstract-leveldown` into a single codebase. Instead of implementing behaviors "vertically" in layers, it is done per database method. Performance-wise `abstract-level` is on par with the old modules. GC pressure is lower because methods allocate less callback functions. Custom (userland) database methods also benefit from the new architecture, because they can reuse utility methods included in `abstract-level` rather than a layer having to detect and wrap custom methods.
 
 Lastly, `abstract-level` comes with new features, some of which were not possible to implement before. Among them: Uint8Array support, builtin sublevels, atomically committing data to multiple sublevels, and reading multiple or all entries from an iterator in one call.
 
