@@ -76,7 +76,7 @@ To upgrade, please consult the following table. If you use a combination of the 
 | [`abstract-leveldown`][abstract-leveldown]   | [`abstract-level`][abstract-level]   | `AbstractLevel`           | [`abstract-level@1`][abstract-level@1]      |
 | [`levelup`][levelup]                         | n/a                                  | n/a                       | Depends <sup>3</sup>                        |
 | `level` or `levelup` with streams            | [`level-read-stream`][l-read-stream] | `EntryStream`             | [`level-read-stream@1`][l-read-stream@1]    |
-| [`leveldown`][leveldown]                     | `classic-level`                      | `ClassicLevel`            | _Not yet available_                         |
+| [`leveldown`][leveldown]                     | [`classic-level`][classic-level]     | `ClassicLevel`            | _Not yet available_                         |
 | [`level-mem`][level-mem]                     | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
 | [`memdown`][memdown]                         | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
 | [`level-js`][level-js]                       | `browser-level`                      | `BrowserLevel`            | _Not yet available_                         |
@@ -276,6 +276,8 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 [abstract-level@1]: https://github.com/Level/abstract-level/blob/main/UPGRADING.md#100
 
 [abstract-leveldown]: https://github.com/Level/abstract-leveldown
+
+[classic-level]: https://github.com/Level/classic-level
 
 [def-ld]: https://github.com/Level/deferred-leveldown
 
