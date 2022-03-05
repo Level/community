@@ -79,7 +79,7 @@ To upgrade, please consult the following table. If you use a combination of the 
 | [`leveldown`][leveldown]                     | [`classic-level`][classic-level]     | `ClassicLevel`            | [`classic-level@1`][classic-level@1]        |
 | [`level-mem`][level-mem]                     | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
 | [`memdown`][memdown]                         | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
-| [`level-js`][level-js]                       | `browser-level`                      | `BrowserLevel`            | _Not yet available_                         |
+| [`level-js`][level-js]                       | [`browser-level`][browser-level]     | `BrowserLevel`            | [`browser-level@1`][browser-level@1]        |
 | [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
 | [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
 | [`multileveldown`][multileveldown]           | `many-level`                         | `ManyLevel`               | _Not yet available_                         |
@@ -276,6 +276,10 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 [abstract-level@1]: https://github.com/Level/abstract-level/blob/main/UPGRADING.md#100
 
 [abstract-leveldown]: https://github.com/Level/abstract-leveldown
+
+[browser-level]: https://github.com/Level/browser-level
+
+[browser-level@1]: https://github.com/Level/browser-level/blob/main/UPGRADING.md#100
 
 [classic-level]: https://github.com/Level/classic-level
 
