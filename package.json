@@ -1,7 +1,7 @@
 {
   "name": "level-community",
   "version": "3.0.0",
-  "description": "General discussion, cross-repository efforts and common information for projects in the community",
+  "description": "Discussion, support and common information for projects in the community",
   "license": "MIT",
   "private": true,
   "scripts": {

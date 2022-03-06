@@ -1,8 +1,6 @@
-# level-community
+# community
 
-**General discussion, cross-repository efforts and common information for projects in the community.**
-
-> :pushpin: Which module should I use? What is `abstract-level`? Head over to the [FAQ](https://github.com/Level/community#faq).
+**Discussion, support and common information for projects in the community.**
 
 [![level badge][level-badge]](https://github.com/Level/awesome)
 [![Test](https://github.com/Level/community/actions/workflows/test.yml/badge.svg)](https://github.com/Level/community/actions/workflows/test.yml)
@@ -60,7 +58,7 @@ Yet, releases too often required canary testing in dependents. It was hard to pr
 
 Enter [`abstract-level`][abstract-level]. This module merges `levelup`, `encoding-down` and `abstract-leveldown` into a single codebase. Instead of implementing behaviors "vertically" in layers, it is done per database method. Performance-wise `abstract-level` is on par with the old modules. GC pressure is lower because methods allocate less callback functions. Custom (userland) database methods also benefit from the new architecture, because they can reuse utility methods included in `abstract-level` rather than a layer having to detect and wrap custom methods.
 
-Lastly, `abstract-level` comes with new features, some of which were not possible to implement before. Among them: Uint8Array support, builtin sublevels, atomically committing data to multiple sublevels, and reading multiple or all entries from an iterator in one call.
+Lastly, `abstract-level` comes with new features, some of which were not possible to implement before. Among them: Uint8Array support, built-in sublevels, atomically committing data to multiple sublevels, and reading multiple or all entries from an iterator in one call.
 
 ### How do I upgrade to `abstract-level`?
 
