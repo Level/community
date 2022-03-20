@@ -80,7 +80,7 @@ To upgrade, please consult the following table. If you use a combination of the 
 | [`level-js`][level-js]                       | [`browser-level`][browser-level]     | `BrowserLevel`            | [`browser-level@1`][browser-level@1]        |
 | [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
 | [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
-| [`multileveldown`][multileveldown]           | `many-level`                         | `ManyLevel`               | _Not yet available_                         |
+| [`multileveldown`][multileveldown]           | [`many-level`][many-level]           | `ManyLevelGuest`          | [`many-level@1`][many-level@1]              |
 | [`level-party`][level-party]                 | `rave-level`                         | `RaveLevel`               | _Not yet available_                         |
 | [`subleveldown`][subleveldown]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
 | [`deferred-leveldown`][def-ld]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
@@ -312,6 +312,10 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 [leveldown]: https://github.com/Level/leveldown
 
 [levelup]: https://github.com/Level/levelup
+
+[many-level]: https://github.com/Level/many-level
+
+[many-level@1]: https://github.com/Level/many-level/blob/main/UPGRADING.md#100
 
 [memdown]: https://github.com/Level/memdown
 
