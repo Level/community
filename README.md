@@ -68,37 +68,35 @@ Naming-wise, databases generally use an npm package name in the form of `*-level
 
 To upgrade, please consult the following table. If you use a combination of the modules listed here, each must be upgraded to its `abstract-level` equivalent.
 
-| Old module                                   | New module                           | Named export <sup>5</sup> | Upgrade guide                               |
-| :------------------------------------------- | :----------------------------------- | :------------------------ | :------------------------------------------ |
-| [`level`][level] <= 7                        | [`level`][level] >= 8 <sup>1</sup>   | `Level`                   | `level@8`<sup>4</sup> (_not yet available_) |
-| [`abstract-leveldown`][abstract-leveldown]   | [`abstract-level`][abstract-level]   | `AbstractLevel`           | [`abstract-level@1`][abstract-level@1]      |
-| [`levelup`][levelup]                         | n/a                                  | n/a                       | Depends <sup>3</sup>                        |
-| `level` or `levelup` with streams            | [`level-read-stream`][l-read-stream] | `EntryStream`             | [`level-read-stream@1`][l-read-stream@1]    |
-| [`leveldown`][leveldown]                     | [`classic-level`][classic-level]     | `ClassicLevel`            | [`classic-level@1`][classic-level@1]        |
-| [`level-mem`][level-mem]                     | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
-| [`memdown`][memdown]                         | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]          |
-| [`level-js`][level-js]                       | [`browser-level`][browser-level]     | `BrowserLevel`            | [`browser-level@1`][browser-level@1]        |
-| [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
-| [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                         |
-| [`multileveldown`][multileveldown]           | [`many-level`][many-level]           | `ManyLevelGuest`          | [`many-level@1`][many-level@1]              |
-| [`level-party`][level-party]                 | `rave-level`                         | `RaveLevel`               | _Not yet available_                         |
-| [`subleveldown`][subleveldown]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
-| [`deferred-leveldown`][def-ld]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
-| [`encoding-down`][encoding-down]<sup>2</sup> | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
-| [`level-errors`][level-errors]<sup>2</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]      |
-| [`level-packager`][level-packager]           | n/a                                  | n/a                       | n/a                                         |
-| [`level-supports`][supports] <= 2            | [`level-supports`][supports] >= 3    | `supports`                | n/a                                         |
-| [`level-codec`][level-codec] <sup>6</sup>    | [`level-transcoder`][transcoder]     | `Transcoder`              | [`level-transcoder@1`][transcoder@1]        |
-| [`level-test`][level-test]                   | n/a                                  | n/a                       | _Not yet available_                         |
+| Old module                                   | New module                           | Named export <sup>3</sup> | Upgrade guide                            |
+| :------------------------------------------- | :----------------------------------- | :------------------------ | :--------------------------------------- |
+| [`level`][level] <= 7                        | [`level`][level] >= 8                | `Level`                   | [`level@8`][level@8]                     |
+| [`abstract-leveldown`][abstract-leveldown]   | [`abstract-level`][abstract-level]   | `AbstractLevel`           | [`abstract-level@1`][abstract-level@1]   |
+| [`levelup`][levelup]                         | n/a                                  | n/a                       | Depends <sup>2</sup>                     |
+| `level` or `levelup` with streams            | [`level-read-stream`][l-read-stream] | `EntryStream`             | [`level-read-stream@1`][l-read-stream@1] |
+| [`leveldown`][leveldown]                     | [`classic-level`][classic-level]     | `ClassicLevel`            | [`classic-level@1`][classic-level@1]     |
+| [`level-mem`][level-mem]                     | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]       |
+| [`memdown`][memdown]                         | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]       |
+| [`level-js`][level-js]                       | [`browser-level`][browser-level]     | `BrowserLevel`            | [`browser-level@1`][browser-level@1]     |
+| [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
+| [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
+| [`multileveldown`][multileveldown]           | [`many-level`][many-level]           | `ManyLevelGuest`          | [`many-level@1`][many-level@1]           |
+| [`level-party`][level-party]                 | `rave-level`                         | `RaveLevel`               | _Not yet available_                      |
+| [`subleveldown`][subleveldown]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
+| [`deferred-leveldown`][def-ld]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
+| [`encoding-down`][encoding-down]<sup>1</sup> | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
+| [`level-errors`][level-errors]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
+| [`level-packager`][level-packager]           | n/a                                  | n/a                       | n/a                                      |
+| [`level-supports`][supports] <= 2            | [`level-supports`][supports] >= 3    | `supports`                | n/a                                      |
+| [`level-codec`][level-codec] <sup>4</sup>    | [`level-transcoder`][transcoder]     | `Transcoder`              | [`level-transcoder@1`][transcoder@1]     |
+| [`level-test`][level-test]                   | n/a                                  | n/a                       | _Not yet available_                      |
 
 <small>
 
-1. Will export `classic-level` in Node and `browser-level` in browsers.
-2. Functionality is now included in `abstract-level`.
-3. If the module that you're wrapping with `levelup` is listed here then refer to that module's upgrade guide, else see [`abstract-level@1`][abstract-level@1].
-4. If browser support is not needed, alternatively use `classic-level` which has the same API.
-5. Most new modules use named exports, for example `const { ClassicLevel } = require('classic-level')` instead of `const leveldown = require('leveldown')`.
-6. Encodings that follow the `level-codec` interface (without `level-codec` as a dependency) can still be used.
+1. Functionality is now included in `abstract-level`.
+2. If the module that you're wrapping with `levelup` is listed here then refer to that module's upgrade guide, else see [`abstract-level@1`][abstract-level@1].
+3. Most new modules use named exports, for example `const { ClassicLevel } = require('classic-level')` instead of `const leveldown = require('leveldown')`.
+4. Encodings that follow the `level-codec` interface (without `level-codec` as a dependency) can still be used.
 
 </small>
 
@@ -288,6 +286,8 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 [encoding-down]: https://github.com/Level/encoding-down
 
 [level]: https://github.com/Level/level
+
+[level@8]: https://github.com/Level/level/blob/HEAD/UPGRADING.md#800
 
 [level-codec]: https://github.com/Level/codec
 
