@@ -325,6 +325,8 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 
 [multileveldown]: https://github.com/Level/multileveldown
 
+[rave-level]: https://github.com/Level/rave-level
+
 [rocksdb]: https://github.com/Level/rocksdb
 
 [subleveldown]: https://github.com/Level/subleveldown
