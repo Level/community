@@ -81,7 +81,7 @@ To upgrade, please consult the following table. If you use a combination of the 
 | [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
 | [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
 | [`multileveldown`][multileveldown]           | [`many-level`][many-level]           | `ManyLevelGuest`          | [`many-level@1`][many-level@1]           |
-| [`level-party`][level-party]                 | `rave-level`                         | `RaveLevel`               | _Not yet available_                      |
+| [`level-party`][level-party]                 | [`rave-level`][rave-level]           | `RaveLevel`               | _Not yet available_                      |
 | [`subleveldown`][subleveldown]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
 | [`deferred-leveldown`][def-ld]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
 | [`encoding-down`][encoding-down]<sup>1</sup> | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
