@@ -81,7 +81,7 @@ To upgrade, please consult the following table. If you use a combination of the 
 | [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
 | [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
 | [`multileveldown`][multileveldown]           | [`many-level`][many-level]           | `ManyLevelGuest`          | [`many-level@1`][many-level@1]           |
-| [`level-party`][level-party]                 | [`rave-level`][rave-level]           | `RaveLevel`               | _Not yet available_                      |
+| [`level-party`][level-party]                 | [`rave-level`][rave-level]           | `RaveLevel`               | [`rave-level@1`][rave-level@1]           |
 | [`subleveldown`][subleveldown]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
 | [`deferred-leveldown`][def-ld]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
 | [`encoding-down`][encoding-down]<sup>1</sup> | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
@@ -326,6 +326,8 @@ Support us with a monthly donation on [Open Collective](https://opencollective.c
 [multileveldown]: https://github.com/Level/multileveldown
 
 [rave-level]: https://github.com/Level/rave-level
+
+[rave-level@1]: https://github.com/Level/rave-level/blob/main/UPGRADING.md#100
 
 [rocksdb]: https://github.com/Level/rocksdb
 
