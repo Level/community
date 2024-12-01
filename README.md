@@ -106,6 +106,10 @@ Maintaining these bindings to RocksDB (as an alternative to LevelDB) has been an
 
 You may find alternatives in user land.
 
+### How does Level relate to LevelDB?
+
+Level is not affiliated with Google. Level includes a Node.js binding for Google's C++ [LevelDB](https://github.com/google/leveldb) project. That is how Level started and where the name comes from. Since then, our ecosystem has grown to include other key-value databases besides LevelDB.
+
 ### Where can I get support?
 
 If you need help - technical, philosophical or other - feel free to [open an issue](https://github.com/Level/community/issues/new/choose) in [`community`](https://github.com/Level/community) or a more specific repository. We don't (yet) use GitHub Discussions, at least until discussions get the ability to [close them](https://github.com/github/feedback/discussions/3097).
