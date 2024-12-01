@@ -9,7 +9,7 @@
     "hallmark": "hallmark fix"
   },
   "devDependencies": {
-    "hallmark": "^4.0.0"
+    "hallmark": "^5.0.1"
   },
   "repository": {
     "type": "git",

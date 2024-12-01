@@ -5,18 +5,15 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [14]
-    name: Node ${{ matrix.node }}
+    name: Test
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Use node ${{ matrix.node }}
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version: lts/*
       - name: Install
-        run: npm install
+        run: npm install --ignore-scripts
       - name: Test
         run: npm test
