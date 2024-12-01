@@ -6,28 +6,6 @@
 [![Test](https://github.com/Level/community/actions/workflows/test.yml/badge.svg)](https://github.com/Level/community/actions/workflows/test.yml)
 [![Donate](https://img.shields.io/badge/donate-orange?logo=open-collective\&logoColor=fff)](https://opencollective.com/level)
 
-## Table of Contents
-
-<details><summary>Click to expand</summary>
-
-- [FAQ](#faq)
-  - [What is Level?](#what-is-level)
-  - [Where do I start?](#where-do-i-start)
-  - [What is `abstract-level`?](#what-is-abstract-level)
-  - [How do I upgrade to `abstract-level`?](#how-do-i-upgrade-to-abstract-level)
-  - [Where can I get support?](#where-can-i-get-support)
-  - [Where can I follow progress?](#where-can-i-follow-progress)
-- [People](#people)
-  - [Collaborators](#collaborators)
-  - [Collaborator emeriti](#collaborator-emeriti)
-  - [Contributors](#contributors)
-- [API](#api)
-- [Contributing](#contributing)
-- [Donate](#donate)
-- [License](#license)
-
-</details>
-
 ## FAQ
 
 ### What is Level?
