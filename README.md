@@ -78,8 +78,8 @@ To upgrade, please consult the following table. If you use a combination of the 
 | [`level-mem`][level-mem]                     | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]       |
 | [`memdown`][memdown]                         | [`memory-level`][memory-level]       | `MemoryLevel`             | [`memory-level@1`][memory-level@1]       |
 | [`level-js`][level-js]                       | [`browser-level`][browser-level]     | `BrowserLevel`            | [`browser-level@1`][browser-level@1]     |
-| [`level-rocksdb`][level-rocksdb]             | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
-| [`rocksdb`][rocksdb]                         | `rocks-level`                        | `RocksLevel`              | _Not yet available_                      |
+| [`level-rocksdb`][level-rocksdb]             | n/a (discontinued)                   | n/a                       | n/a                                      |
+| [`rocksdb`][rocksdb]                         | n/a (discontinued)                   | n/a                       | n/a                                      |
 | [`multileveldown`][multileveldown]           | [`many-level`][many-level]           | `ManyLevelGuest`          | [`many-level@1`][many-level@1]           |
 | [`level-party`][level-party]                 | [`rave-level`][rave-level]           | `RaveLevel`               | [`rave-level@1`][rave-level@1]           |
 | [`subleveldown`][subleveldown]<sup>1</sup>   | n/a                                  | n/a                       | [`abstract-level@1`][abstract-level@1]   |
@@ -99,6 +99,12 @@ To upgrade, please consult the following table. If you use a combination of the 
 4. Encodings that follow the `level-codec` interface (without `level-codec` as a dependency) can still be used.
 
 </small>
+
+### Why have `level-rocksdb` and `rocksdb` been discontinued?
+
+Maintaining these bindings to RocksDB (as an alternative to LevelDB) has been an afterthought for several years. There was no active maintainer in the Level organization who used `rocksdb` themselves. The `level-rocksdb` and `rocksdb` npm packages in addition have seen very few downloads compared to the main `level` package. LevelDB continues to be the preferred option for typical use cases of Level with good general-purpose performance.
+
+You may find alternatives in user land.
 
 ### Where can I get support?
 
