@@ -88,6 +88,14 @@ You may find alternatives in user land.
 
 Level is not affiliated with Google. Level includes a Node.js binding for Google's C++ [LevelDB](https://github.com/google/leveldb) project. That is how Level started and where the name comes from. Since then, our ecosystem has grown to include other key-value databases besides LevelDB.
 
+### How do I paginate an iterator (at scale)?
+
+Comparing to relational databases, `abstract-level` has an equivalent to the SQL `LIMIT` clause, namely the `limit` option on iterators. But there's no equivalent to the SQL `OFFSET` clause.
+
+There's no operation that can skip N amount of keys. You could manually skip keys by repeatedly calling `iterator.next()` or `iterator.nextv()` but that's expensive because those calls do fetch the data of every entry. Or you could seek to a key, but determining that key either requires an index (built by you) or for your keys to be monotonically increasing numbers. In other words, if you strictly need offset-based pagination, you will have to build it.
+
+Alternatively, use the concept of cursors (also known as continuation tokens). Where the input is not an offset but instead the last key visited - i.e. `cursor`. To fetch a page of say 10 entries, create an iterator with `db.iterator({ gt: cursor, limit: 10 })`. Then use the last key of that iterator as the cursor of the next page. This approach better aligns with the characteristics of `abstract-level`.
+
 ### Where can I get support?
 
 If you need help - technical, philosophical or other - feel free to [open an issue](https://github.com/Level/community/issues/new/choose) in [`community`](https://github.com/Level/community) or a more specific repository. We don't (yet) use GitHub Discussions, at least until discussions get the ability to [close them](https://github.com/github/feedback/discussions/3097).
